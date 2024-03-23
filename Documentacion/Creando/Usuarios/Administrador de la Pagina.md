@@ -1,0 +1,2 @@
+Son usuarios con la capacidad de revisar toda la información disponible en la pagina como los usuarios, los servicios y sus diagramas y chats, pero no los pueden modificar.
+Tienen la responsabilidad de crear, modificar o quitar  los Blogs

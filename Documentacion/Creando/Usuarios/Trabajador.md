@@ -1,0 +1,2 @@
+Son usuarios internos de la empresa, tienen acceso a la administración de servicios que tengan contratado los clientes.
+Hay trabajadores jefes que son quienes aprueban los diagramas de tiempos programados. Pero todos los trabajadores en general pueden ir modificar los diagramas de tiempos que les correspondan.

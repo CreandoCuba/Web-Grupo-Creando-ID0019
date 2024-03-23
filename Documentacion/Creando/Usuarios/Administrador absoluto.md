@@ -1,0 +1,1 @@
+Tiene la capacidad de leer y modificar cualquier contenido de la pagina

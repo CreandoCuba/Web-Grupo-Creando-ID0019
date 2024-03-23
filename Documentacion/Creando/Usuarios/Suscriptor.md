@@ -1,0 +1,1 @@
+Es cualquier persona que se suscriba a una sección de la pagina, como mensajes internos de la pagina o vacantes en la bolsa de trabajo

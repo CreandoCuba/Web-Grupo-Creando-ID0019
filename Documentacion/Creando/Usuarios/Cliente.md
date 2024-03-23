@@ -1,0 +1,1 @@
+Son usuarios que representan a empresas que han pagado a la empresa, tienen capacidad acceder a las paginas para solicitar servicios y a administrar o supervisar el avance de los servicios que tienen contratados.
