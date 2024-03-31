@@ -22,7 +22,8 @@ import {
     ChevronDownIcon,
     ChevronRightIcon,
 } from '@chakra-ui/icons'
-
+import {Link as RouterLink} from 'react-router-dom';
+import {Link, LinkProps} from '@chakra-ui/react';
 export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure()
 
@@ -104,10 +105,10 @@ const DesktopNav = () => {
                 <Box key={navItem.label}>
                     <Popover trigger={'hover'} placement={'bottom-start'}>
                         <PopoverTrigger>
-                            <Box
-                                as="a"
+                            <Link
+                                as={RouterLink}
                                 p={2}
-                                href={navItem.href ?? '#'}
+                                to={navItem.href ?? '#'}
                                 fontSize={'sm'}
                                 fontWeight={500}
                                 color={linkColor}
@@ -115,8 +116,11 @@ const DesktopNav = () => {
                                     textDecoration: 'none',
                                     color: linkHoverColor,
                                 }}>
-                                {navItem.label}
-                            </Box>
+                                {[
+                                    navItem.label,
+                                    navItem.children? (<ChevronDownIcon/>): null
+                                ]}
+                            </Link>
                         </PopoverTrigger>
 
                         {navItem.children && (
@@ -143,9 +147,9 @@ const DesktopNav = () => {
 
 const DesktopSubNav = ({ label, href, subLabel }) => {
     return (
-        <Box
-            as="a"
-            href={href}
+        <Link
+            as={RouterLink}
+            to={href}
             role={'group'}
             display={'block'}
             p={2}
@@ -172,7 +176,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
                     <Icon color={'orange.400'} w={5} h={5} as={ChevronRightIcon} />
                 </Flex>
             </Stack>
-        </Box>
+        </Link>
     )
 }
 
@@ -238,41 +242,57 @@ const MobileNavItem = ({ label, children, href }) => {
 
 const NAV_ITEMS = [
     {
-        label: 'Inspiration',
-        children: [
-            {
-                label: 'Explore Design Work',
-                subLabel: 'Trending Design to inspire you',
-                href: '#',
-            },
-            {
-                label: 'New & Noteworthy',
-                subLabel: 'Up-and-coming Designers',
-                href: '#',
-            },
-        ],
+        label: 'Pagina Principal',
+        href: '/main'
     },
     {
         label: 'Nuestros Servicios',
+        href: '/Servicios',
         children: [
             {
-                label: 'Job Board',
-                subLabel: 'Find your dream design job',
+                label: 'Desarrollo Local',
+                subLabel: 'Elaboracion de estrategias y busqueda de oportunidades',
                 href: '#',
             },
             {
-                label: 'Freelance Projects',
-                subLabel: 'An exclusive list for contract work',
+                label: 'Diseño',
+                subLabel: 'Logos, interiores, personajes y Stands',
                 href: '#',
             },
+            {
+                label: 'Informatica',
+                subLabel: 'Paginas Web y Automatizacion de procesos',
+                href: '#',
+            },
+            {
+                label: 'Turismo',
+                subLabel: 'Diseño de productos y destinos turisticos',
+                href: '#',
+            },{
+                label: 'Administracion',
+                subLabel: 'Estrategia, Logistica y Planificacion',
+                href: '#',
+            },
+            {
+                label: 'Fotografia y Video',
+                subLabel: 'Publicitarias de interiores y exteriores',
+                href: '#',
+            }
         ],
     },
     {
-        label: 'Learn Design',
-        href: '#',
-    },
-    {
-        label: 'Hire Designers',
-        href: '#',
-    },
+        label: 'Sobre nosotros',
+        href: '/QuienesSomos'
+        // children: [
+        //     {
+        //         label: 'Quienes Somos',
+        //         href: '#'
+        //     },
+        //
+        // ]
+    }
+    // {
+    //     label: 'Hire Designers',
+    //     href: '#',
+    // },
 ]
