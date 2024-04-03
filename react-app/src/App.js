@@ -1,12 +1,4 @@
 import {Route, RouterProvider, Routes} from "react-router-dom";
-import About from "./sections/About";
-import Why from "./sections/Why";
-import Client from "./sections/Client";
-import Info from "./sections/Info";
-import Footer from "./sections/Footer";
-import Service from "./sections/Service";
-import Header from "./sections/Header";
-import Hero from "./sections/Hero";
 import IndexPage from "./pages/IndexPage";
 import ServicesPage from "./pages/ServicesPage";
 import AboutPage from "./pages/AboutPage";
