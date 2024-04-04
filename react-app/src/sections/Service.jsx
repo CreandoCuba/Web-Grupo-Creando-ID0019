@@ -1,5 +1,39 @@
 
-
+const mainRoute = 'images/services/'
+const services = [
+    {
+        name:'Administración de Empresas',
+        route: (mainRoute +'Administración de Empresas.png'),
+    },
+    {
+        name: 'Contabilidad y Finanzas',
+        route: mainRoute +'Contabilidad y Finanzas.png'
+    },
+    {
+        name: 'Desarrollo Local',
+        route: mainRoute+'Desarrollo Local.png'
+    },
+    {
+        name: 'Diseño',
+        route: mainRoute +'Diseño.png'
+    },
+    {
+        name: 'Fotografía',
+        route: mainRoute +'Fotografía.png'
+    },
+    {
+        name: 'Informatica',
+        route: mainRoute +'Informática.png'
+    },
+    {
+        name: 'Marketing y Comunicacion',
+        route: mainRoute +'Marketing y Comunicación.png'
+    },
+    {
+        name: 'Turismo',
+        route: mainRoute+'Turismo.png'
+    }
+]
 export default () => {
     return (
 
@@ -16,69 +50,29 @@ export default () => {
                         </p>
                     </div>
                     <div className="row">
-                        <div className="col-md-4 ">
-                            <div className="box ">
-                                <div className="img-box">
-                                    <img src="images/s1.png" alt=""/>
+                        {services.map((value,index) => {return(
+                                <div className="col-md-4 ">
+                                    <div className="box ">
+                                        <div className="img-box">
+                                            <img src={value.route} alt="Icono Representativo"/>
+                                        </div>
+                                        <div className="detail-box">
+                                            <h5>
+                                                {value.name}
+                                            </h5>
+                                            <p>
+                                                fact that a reader will be distracted by the readable content of a page
+                                                when looking at its layout.
+                                                The
+                                                point of using
+                                            </p>
+                                            <a href="">
+                                                Read More
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="detail-box">
-                                    <h5>
-                                        Currency Wallet
-                                    </h5>
-                                    <p>
-                                        fact that a reader will be distracted by the readable content of a page
-                                        when looking at its layout.
-                                        The
-                                        point of using
-                                    </p>
-                                    <a href="">
-                                        Read More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 ">
-                            <div className="box ">
-                                <div className="img-box">
-                                    <img src="images/s2.png" alt=""/>
-                                </div>
-                                <div className="detail-box">
-                                    <h5>
-                                        Security Storage
-                                    </h5>
-                                    <p>
-                                        fact that a reader will be distracted by the readable content of a page
-                                        when looking at its layout.
-                                        The
-                                        point of using
-                                    </p>
-                                    <a href="">
-                                        Read More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 ">
-                            <div className="box ">
-                                <div className="img-box">
-                                    <img src="images/s3.png" alt=""/>
-                                </div>
-                                <div className="detail-box">
-                                    <h5>
-                                        Expert Support
-                                    </h5>
-                                    <p>
-                                        fact that a reader will be distracted by the readable content of a page
-                                        when looking at its layout.
-                                        The
-                                        point of using
-                                    </p>
-                                    <a href="">
-                                        Read More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        )})}
                     </div>
                     <div className="btn-box">
                         <a href="">
