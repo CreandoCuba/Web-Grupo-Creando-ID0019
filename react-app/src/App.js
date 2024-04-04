@@ -7,7 +7,7 @@ import TeamPage from "./pages/TeamPage";
 
 const pages = [
     {
-        path:'/index',
+        path:'/',
         button:'Home',
         element:<IndexPage/>
     },
