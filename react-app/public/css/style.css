@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+:root{
+  --orange: orange;
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #0c0c0c;
@@ -50,7 +53,7 @@ body {
 }
 
 .heading_container h2 span {
-  color: #00bbf0;
+  color: #f06400;
 }
 
 .heading_container p {
@@ -136,6 +139,9 @@ a:focus {
 
 .header_section {
   padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 30000;
 }
 
 .header_section .container-fluid {
@@ -168,7 +174,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: #00bbf0;
+  color: var(--orange);
 }
 
 .custom_nav-container .navbar-nav .nav-item.active .nav-link {
@@ -184,7 +190,7 @@ a:focus {
 }
 
 .custom_nav-container .nav_search-btn:hover {
-  color: #00bbf0;
+  color: var(--orange);
 }
 
 .custom_nav-container .navbar-toggler {
@@ -259,6 +265,8 @@ a:focus {
           align-items: center;
   position: relative;
   padding: 45px 0 145px 0;
+  background-size: cover;
+  background-position: 50% 50 %;
 }
 
 .slider_section .row {
@@ -306,7 +314,7 @@ a:focus {
 .slider_section .detail-box .btn-box .btn1 {
   display: inline-block;
   padding: 10px 15px;
-  background-color: #00bbf0;
+  background-color: var(--orange);
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -395,7 +403,7 @@ a:focus {
 .slider_section .carousel-indicators li.active {
   width: 20px;
   height: 20px;
-  background-color: #00bbf0;
+  background-color: var(--orange);
 }
 
 .service_section {
@@ -454,7 +462,7 @@ a:focus {
 }
 
 .service_section .box .detail-box a:hover {
-  color: #00bbf0;
+  color: var(--orange);
 }
 
 .service_section .btn-box {
@@ -470,7 +478,7 @@ a:focus {
 .service_section .btn-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #00bbf0;
+  background-color: var(--orange);
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -483,7 +491,7 @@ a:focus {
 }
 
 .about_section {
-  background-color: #00204a;
+  background-color: #232323;
   color: #ffffff;
 }
 
@@ -512,7 +520,7 @@ a:focus {
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #00bbf0;
+  background-color: var(--orange);
   color: #ffffff;
   border-radius: 0px;
   -webkit-transition: all 0.3s;
@@ -587,7 +595,7 @@ a:focus {
 .why_section .btn-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #00bbf0;
+  background-color: var(--orange);
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -650,7 +658,7 @@ a:focus {
 }
 
 .team_section .team_container .box .detail-box h5 {
-  color: #00bbf0;
+  color: var(--orange);
   font-weight: 600;
   position: relative;
 }
@@ -671,7 +679,7 @@ a:focus {
 }
 
 .team_section .team_container .box .social_box a:hover {
-  color: #00bbf0;
+  color: var(--orange);
 }
 
 /*team section end*/
@@ -775,7 +783,7 @@ a:focus {
 
 /* client section end */
 .info_section {
-  background-color: #00204a;
+  background-color: #1f1f1f;
   color: #ffffff;
   padding: 45px 0 15px 0;
 }
@@ -809,7 +817,7 @@ a:focus {
 }
 
 .info_section .info_contact .contact_link_box a:hover {
-  color: #00bbf0;
+  color: var(--orange);
 }
 
 .info_section .info_social {
@@ -837,7 +845,7 @@ a:focus {
 }
 
 .info_section .info_social a:hover {
-  color: #00bbf0;
+  color: var(--orange);
 }
 
 .info_section .info_links {
@@ -864,7 +872,7 @@ a:focus {
 }
 
 .info_section .info_links a:hover {
-  color: #00bbf0;
+  color: var(--orange);
 }
 
 .info_section form input {
@@ -898,7 +906,7 @@ a:focus {
   text-align: center;
   display: inline-block;
   padding: 10px 55px;
-  background-color: #00bbf0;
+  background-color: var(--orange);
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
