@@ -10,18 +10,21 @@ export default () => {
                                 <div className="col-md-6 ">
                                     <div className="detail-box">
                                         <h1>
-                                            Crypto <br/>
-                                            Currency
+                                            SUPER-VISIÓN SURL
+
                                         </h1>
                                         <p>
-                                            Explicabo esse amet tempora quibusdam laudantium, laborum eaque
-                                            magnam fugiat hic? Esse dicta aliquid error repudiandae earum
-                                            suscipit fugiat molestias, veniam, vel architecto veritatis
-                                            delectus repellat modi impedit sequi.
+                                            PRIMERA MIPYME CERTIFICADA EN CUBA POR EL CECMED<br/>
+                                            Grupo líder en la consultoría
+                                            empresarial integral, con presencia a nivel
+                                            nacional, en constante desarrollo de
+                                            estrategias de negocios y planes de
+                                            mejoras, que apoyen a nuestros clientes y
+                                            al desarrollo local.
                                         </p>
                                         <div className="btn-box">
                                             <a href="" className="btn1">
-                                                Read More
+                                                Leer más
                                             </a>
                                         </div>
                                     </div>

@@ -8,27 +8,27 @@ import TeamPage from "./pages/TeamPage";
 const pages = [
     {
         path:'/',
-        button:'Home',
+        button:'Inicio',
         element:<IndexPage/>
     },
     {
       path: '/SobreNosotros',
-      button: 'About',
+      button: 'Nosotros',
       element: <AboutPage/>
     },
     {
         path: '/servicios',
-        button: 'Services',
+        button: ' Servicios',
         element: <ServicesPage/>
     },
     {
         path:'/PorQueNosotros',
-        button: 'Why Us',
+        button: 'Clientes',
         element: <WhyPage/>
     },
     {
         path:'/Equipo',
-        button: 'Team',
+        button: 'Equipo',
         element: <TeamPage/>
     }
 ]

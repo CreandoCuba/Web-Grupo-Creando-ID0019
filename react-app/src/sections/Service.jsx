@@ -1,37 +1,76 @@
 
-const mainRoute = 'images/services/'
+const mainImgRoute = 'images/services/'
 const services = [
     {
         name:'Administración de Empresas',
-        route: (mainRoute +'Administración de Empresas.png'),
+        imgRoute: mainImgRoute +'Administración de Empresas.png',
+        subList: [
+            'Diseño de Modelo de Negocios.',
+            'Planeación Estratégica',
+            'Logística'
+        ]
     },
     {
         name: 'Contabilidad y Finanzas',
-        route: mainRoute +'Contabilidad y Finanzas.png'
+        imgRoute: mainImgRoute +'Contabilidad y Finanzas.png',
+        subList:[
+            'Teneduría de libros',
+            'Finanzas corporativas',
+            'Estudios de factibilidad'
+        ]
     },
     {
         name: 'Desarrollo Local',
-        route: mainRoute+'Desarrollo Local.png'
+        imgRoute: mainImgRoute+'Desarrollo Local.png',
+        subList: [
+            'Identidad, Imagen y Marketing de ciudades o localidades.',
+            'Diseño y desarrollo de marcas.'
+        ]
     },
     {
         name: 'Diseño',
-        route: mainRoute +'Diseño.png'
+        imgRoute: mainImgRoute +'Diseño.png',
+        subList: [
+            'Diseño de Personaje o Mascota',
+            'Diseño de interiores',
+            'Diseño de infografías.'
+        ]
     },
     {
         name: 'Fotografía',
-        route: mainRoute +'Fotografía.png'
+        imgRoute: mainImgRoute +'Fotografía.png',
+        subList: [
+            'Fotos publicitarias de estudio.',
+            'Fotos publicitarias de exteriores.',
+            'Colchón fotográfico publicitario.'
+        ]
     },
     {
         name: 'Informatica',
-        route: mainRoute +'Informática.png'
+        imgRoute: mainImgRoute +'Informática.png',
+        subList: [
+            'Creación y Gestión de páginas web.',
+            'Informatización de procesos.',
+            'Seguridad informática.'
+        ]
     },
     {
         name: 'Marketing y Comunicacion',
-        route: mainRoute +'Marketing y Comunicación.png'
+        imgRoute: mainImgRoute +'Marketing y Comunicación.png',
+        subList: [
+            'Investigación de mercados',
+            'Conceptualización de productos.',
+            'Diseño de productos.'
+        ]
     },
     {
         name: 'Turismo',
-        route: mainRoute+'Turismo.png'
+        imgRoute: mainImgRoute+'Turismo.png',
+        subList: [
+            'Diseño de productos turísticos.',
+            'Diseño de puntos náuticos.',
+            'Diseño de souvenirs.'
+        ]
     }
 ]
 export default () => {
@@ -42,11 +81,12 @@ export default () => {
                 <div className="container ">
                     <div className="heading_container heading_center">
                         <h2>
-                            Our <span>Services</span>
+                            Nuestros <span>Servicios</span>
                         </h2>
                         <p>
-                            There are many variations of passages of Lorem Ipsum available, but the majority have
-                            suffered alteration
+                            Todos nuestros servicios se concretan mediante diagnosticos,
+                            asesorias, acompañamiento, implementacion o seguimiento de
+                            cada una de las areas.
                         </p>
                     </div>
                     <div className="row">
@@ -54,20 +94,15 @@ export default () => {
                                 <div className="col-md-4 ">
                                     <div className="box ">
                                         <div className="img-box">
-                                            <img src={value.route} alt="Icono Representativo"/>
+                                            <img src={value.imgRoute} alt="Icono Representativo"/>
                                         </div>
                                         <div className="detail-box">
                                             <h5>
                                                 {value.name}
                                             </h5>
-                                            <p>
-                                                fact that a reader will be distracted by the readable content of a page
-                                                when looking at its layout.
-                                                The
-                                                point of using
-                                            </p>
+                                            <ul>{value.subList?.map((value) => {return <li>{value}</li>} )}</ul>
                                             <a href="">
-                                                Read More
+                                                Leer más
                                             </a>
                                         </div>
                                     </div>
@@ -76,7 +111,7 @@ export default () => {
                     </div>
                     <div className="btn-box">
                         <a href="">
-                            View All
+                            Ver todos
                         </a>
                     </div>
                 </div>

@@ -8,7 +8,7 @@ export default ()=> {
                 <nav className="navbar navbar-expand-lg custom_nav-container ">
                     <a className="navbar-brand" href="index.html">
                         <span>
-                          Finexo
+                          Creando
                         </span>
                     </a>
 
