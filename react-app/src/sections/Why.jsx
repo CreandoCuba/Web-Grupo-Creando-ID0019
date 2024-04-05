@@ -7,7 +7,7 @@ export default () => {
             <div className="container">
                 <div className="heading_container heading_center">
                     <h2>
-                        Why Choose <span>Us</span>
+                        Por qué <span>Elegirnos?</span>
                     </h2>
                 </div>
                 <div className="why_container">
@@ -82,7 +82,7 @@ export default () => {
                 </div>
                 <div className="btn-box">
                     <a href="">
-                        Read More
+                        Leer más
                     </a>
                 </div>
             </div>

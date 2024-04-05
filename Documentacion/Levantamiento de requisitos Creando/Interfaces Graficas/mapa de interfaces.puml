@@ -1,0 +1,39 @@
+@startmindmap
+
++ Mapa de Interfaces
+++ Inicio
+++ Nosotros
+++ Servicios
++++ Administración de Empresas
++++ Contabilidad y Finanzas
++++ Desarrollo Local
++++ Diseño
++++ Fotografía
++++ Informatica
++++ Marketing y Comunicacion
++++ Turismo
++++[#lightgreen] Contratados(Gantt)
+++ Clientes
++++[#lightgreen] Administrar comentarios
+++ Equipo
++++ Nuestro Equipo
++++[#lightgreen] Bolsa de vacantes
+++++[#lightgreen] Aplicar a la bolsa
+++[#lightblue] Blogs
++++[#lightgreen] Administrar Blogs
+++[#lightgreen] LogIn
+
+right footer
+La interfaz de aplicar la bolsa podria ser
+solo un panel que aparece desde el lateral
+endfooter
+
+legend left
+azul: Recomendado usar con el Backend
+verde: necesario el Backend
+todos los coloreados son recomendables para la segunda iteracion o posterior
+endlegend
+
+
+
+@endmindmap
