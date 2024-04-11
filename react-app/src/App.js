@@ -5,36 +5,64 @@ import AboutPage from "./pages/AboutPage";
 import WhyPage from "./pages/WhyPage";
 import TeamPage from "./pages/TeamPage";
 import AdministracionDeEmpresas from "./pages/Services/AdministracionDeEmpresas";
-
+import NavBar from './Chakra templates/NavBar'
 const pages = [
     {
         path:'/',
-        button:'Inicio',
+        label:'Inicio',
         element:<IndexPage/>
     },
     {
       path: '/SobreNosotros',
-      button: 'Nosotros',
+      label: 'Nosotros',
       element: <AboutPage/>
     },
     {
         path: '/servicios',
-        button: ' Servicios',
-        element: <ServicesPage/>
+        label: ' Servicios',
+        element: <ServicesPage/>,
+        children:[
+            {
+                path:'/administraciondeempresas',
+                label: 'Administracion de Empresas',
+                subLabel: 'Estrategia, Logistica y Planificacion',
+                element: <AdministracionDeEmpresas/>
+            },
+            /*{
+                label: 'Desarrollo Local',
+                subLabel: 'Elaboracion de estrategias y busqueda de oportunidades',
+                href: '#',
+            },
+            {
+                label: 'Diseño',
+                subLabel: 'Logos, interiores, personajes y Stands',
+                href: '#',
+            },
+            {
+                label: 'Informatica',
+                subLabel: 'Paginas Web y Automatizacion de procesos',
+                href: '#',
+            },
+            {
+                label: 'Turismo',
+                subLabel: 'Diseño de productos y destinos turisticos',
+                href: '#',
+            },
+            {
+                label: 'Fotografia y Video',
+                subLabel: 'Publicitarias de interiores y exteriores',
+                href: '#',
+            }*/
+        ]
     },
     {
         path:'/PorQueNosotros',
-        button: 'Clientes',
+        label: 'Clientes',
         element: <WhyPage/>
     },
     {
-        path:'/administraciondeempresas',
-        button: 'Administracion de Empresas',
-        element: <AdministracionDeEmpresas/>
-    },
-    {
         path:'/Equipo',
-        button: 'Equipo',
+        label: 'Equipo',
         element: <TeamPage/>
     },
 
@@ -43,18 +71,25 @@ const pages = [
 
 function App() {
       return (
-          <Routes>
-              {pages.map((value, index)=>{
-                  return (
-                      <Route
-                          key={index}
+          <div>
+              <NavBar NavItems={pages}/>
+              <Routes>
+                  {[pages.map((value, index)=>{
+                      const mainRoute = (<Route
+                          key={value.path}
                           path={value.path}
                           element={value.element}
-                      />
-                  )
-              })}
+                      />)
+                      if (value.children) return (
+                          [mainRoute, ...value.children?.map((value,index) =>
+                                  <Route key={value.path} path={value.path} element={value.element}/>
+                          )])
+                      else return mainRoute
+                  })]
 
-          </Routes>
+                  }
+              </Routes>
+          </div>
       )
 }
 
