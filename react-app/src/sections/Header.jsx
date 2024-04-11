@@ -22,13 +22,13 @@ export default ()=> {
                         <ul className="navbar-nav  ">
                             {pages.map((value, index) => {
                                 if (index === 0) return (
-                                    <li className="nav-item active">
+                                    <li className="nav-item active" key={0}>
                                         <Link className="nav-link" to={value.path}>{value.button}<span
                                             className="sr-only">(current)</span></Link>
                                     </li>
                                 )
                                 return (
-                                    <li className="nav-item">
+                                    <li className="nav-item" key={index}>
                                         <Link
                                             className="nav-link"
                                             to={value.path}

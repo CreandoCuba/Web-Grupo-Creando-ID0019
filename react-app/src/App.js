@@ -4,6 +4,7 @@ import ServicesPage from "./pages/ServicesPage";
 import AboutPage from "./pages/AboutPage";
 import WhyPage from "./pages/WhyPage";
 import TeamPage from "./pages/TeamPage";
+import AdministracionDeEmpresas from "./pages/Services/AdministracionDeEmpresas";
 
 const pages = [
     {
@@ -27,10 +28,17 @@ const pages = [
         element: <WhyPage/>
     },
     {
+        path:'/administraciondeempresas',
+        button: 'Administracion de Empresas',
+        element: <AdministracionDeEmpresas/>
+    },
+    {
         path:'/Equipo',
         button: 'Equipo',
         element: <TeamPage/>
-    }
+    },
+
+
 ]
 
 function App() {

@@ -566,7 +566,9 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
 }
-
+li{
+  text-align: start;
+}
 .why_section .box .img-box img {
   width: 55px;
   height: auto;
