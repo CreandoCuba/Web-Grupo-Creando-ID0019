@@ -121,6 +121,8 @@ a:focus {
 .hero_area .hero_bg_box .bg_img_box {
   min-width: 100%;
   min-height: 100%;
+  background-size: cover;
+  background-position: top;
 }
 
 .hero_area .hero_bg_box img {
