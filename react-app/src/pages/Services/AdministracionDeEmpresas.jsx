@@ -248,22 +248,13 @@ export default () => {
                 columns={value.columns}
                 key={index}
                 mt={'100px'}
-                
+
             />
         )
     })
     return(
 
         <div className="sub_page">
-            <div className="hero_area">
-
-                <div className="hero_bg_box">
-                    <div className="bg_img_box">
-                        <img src="images/hero-bg.png" alt=""/>
-                    </div>
-                </div>
-                <Header/>
-            </div>
             <section className="why_section layout_padding">
                 <div className="container">
                     <div className="heading_container heading_center">

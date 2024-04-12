@@ -19,8 +19,6 @@ export default () => {
                         <img src="images/hero-bg.png" alt=""/>
                     </div>
                 </div>
-
-                <Header/>
                 <Hero/>
             </div>
 
