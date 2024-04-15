@@ -57,7 +57,7 @@ const pages = [
     },
     {
         path:'/PorQueNosotros',
-        label: 'Clientes',
+        label: 'Por que Elegirnos?',
         element: <WhyPage/>
     },
     {
