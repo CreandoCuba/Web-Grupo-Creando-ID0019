@@ -6,6 +6,13 @@ import WhyPage from "./pages/WhyPage";
 import TeamPage from "./pages/TeamPage";
 import AdministracionDeEmpresas from "./pages/Services/AdministracionDeEmpresas";
 import NavBar from './Chakra templates/NavBar'
+import DesarrolloLocal from "./pages/Services/DesarrolloLocal";
+import Informatica from "./pages/Services/Informatica";
+import Marketing from "./pages/Services/Marketing";
+import Diseno from "./pages/Services/Diseno";
+import Turismo from "./pages/Services/Turismo";
+import Contabilidad from "./pages/Services/Contabilidad";
+import AudioVisuales from "./pages/Services/AudioVisuales";
 const pages = [
     {
         path:'/',
@@ -28,31 +35,48 @@ const pages = [
                 subLabel: 'Estrategia, Logistica y Planificacion',
                 element: <AdministracionDeEmpresas/>
             },
-            /*{
+            {
+                path: '/desarrolloLocal',
                 label: 'Desarrollo Local',
                 subLabel: 'Elaboracion de estrategias y busqueda de oportunidades',
-                href: '#',
+                element: <DesarrolloLocal/>
             },
             {
+                path: '/Diseno',
                 label: 'Diseño',
                 subLabel: 'Logos, interiores, personajes y Stands',
-                href: '#',
+                element: <Diseno/>
             },
             {
+                path: '/Informatica',
                 label: 'Informatica',
                 subLabel: 'Paginas Web y Automatizacion de procesos',
-                href: '#',
+                element: <Informatica/>
             },
             {
+                path: '/Turismo',
                 label: 'Turismo',
                 subLabel: 'Diseño de productos y destinos turisticos',
-                href: '#',
+                element: <Turismo/>
             },
             {
-                label: 'Fotografia y Video',
-                subLabel: 'Publicitarias de interiores y exteriores',
-                href: '#',
-            }*/
+                path: '/Audiovisuales',
+                label: 'Audiovisuales',
+                subLabel: 'Creacion de Fotografias y Videos profesionales',
+                element: <AudioVisuales/>
+            },
+            {
+                path: '/Marketing',
+                label: 'Marketing',
+                subLabel: 'Mejora tu imagen ante tus clientes',
+                element: <Marketing/>
+            },
+            {
+                path: '/Contabilidad',
+                label: 'Contabilidad y Finanzas',
+                subLabel: '',
+                element: <Contabilidad/>
+            }
         ]
     },
     {
