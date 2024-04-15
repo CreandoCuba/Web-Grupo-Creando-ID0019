@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+import {Button, Text} from "@chakra-ui/react";
 
 export default () => {
     return (
@@ -13,7 +15,7 @@ export default () => {
                                             SUPER-VISIÓN SURL
 
                                         </h1>
-                                        <p>
+                                        <Text fontSize='lg'>
                                             PRIMERA MIPYME CERTIFICADA EN CUBA POR EL CECMED<br/>
                                             Grupo líder en la consultoría
                                             empresarial integral, con presencia a nivel
@@ -21,12 +23,7 @@ export default () => {
                                             estrategias de negocios y planes de
                                             mejoras, que apoyen a nuestros clientes y
                                             al desarrollo local.
-                                        </p>
-                                        <div className="btn-box">
-                                            <a href="" className="btn1">
-                                                Leer más
-                                            </a>
-                                        </div>
+                                        </Text>
                                     </div>
                                 </div>
                                 <div className="col-md-6">
@@ -43,20 +40,22 @@ export default () => {
                                 <div className="col-md-6 ">
                                     <div className="detail-box">
                                         <h1>
-                                            Crypto <br/>
-                                            Currency
+                                            Te ayudamos a crecer
                                         </h1>
-                                        <p>
-                                            Explicabo esse amet tempora quibusdam laudantium, laborum eaque
-                                            magnam fugiat hic? Esse dicta aliquid error repudiandae earum
-                                            suscipit fugiat molestias, veniam, vel architecto veritatis
-                                            delectus repellat modi impedit sequi.
-                                        </p>
-                                        <div className="btn-box">
-                                            <a href="" className="btn1">
-                                                Read More
-                                            </a>
-                                        </div>
+                                        <Text fontSize='lg'>
+                                            Nuestra empresa brinda variados servicios para ayudarte a crecer
+                                            entre los cuales se incluyen servicios informaticos, de contabilidad
+                                            o de diseño.
+                                        </Text>
+                                        <Link to={'/servicios'}>
+                                            <Button
+                                                colorScheme='orange'
+                                                backgroundColor='orange'
+                                                color='white'
+                                                mt='20px'>
+                                                Saber Más
+                                            </Button>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="col-md-6">
@@ -73,20 +72,23 @@ export default () => {
                                 <div className="col-md-6 ">
                                     <div className="detail-box">
                                         <h1>
-                                            Crypto <br/>
-                                            Currency
+                                            Conocenos
                                         </h1>
-                                        <p>
-                                            Explicabo esse amet tempora quibusdam laudantium, laborum eaque
-                                            magnam fugiat hic? Esse dicta aliquid error repudiandae earum
-                                            suscipit fugiat molestias, veniam, vel architecto veritatis
-                                            delectus repellat modi impedit sequi.
-                                        </p>
-                                        <div className="btn-box">
-                                            <a href="" className="btn1">
-                                                Read More
-                                            </a>
-                                        </div>
+                                        <Text fontSize='lg'>
+                                            Somos un grupo que brinda servicios de consultoría
+                                            empresarial integral a los actores económicos del
+                                            territorio, para garantizar su rentabilidad y
+                                            sostenibilidad en el tiempo.
+                                        </Text>
+                                        <Link to={'/SobreNosotros'}>
+                                            <Button
+                                                colorScheme='orange'
+                                                backgroundColor='orange'
+                                                color='white'
+                                                mt='20px'>
+                                                Saber Más
+                                            </Button>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="col-md-6">
