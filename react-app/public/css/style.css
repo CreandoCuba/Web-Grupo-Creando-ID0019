@@ -32,7 +32,9 @@ body {
 .layout_padding-bottom {
   padding-bottom: 90px;
 }
-
+.noDeco{
+  list-style: none;
+}
 .heading_container {
   display: -webkit-box;
   display: -ms-flexbox;

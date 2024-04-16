@@ -30,7 +30,7 @@ const services = pages[2].children
                                             <h5>
                                                 {value.label}
                                             </h5>
-                                            <ul>{value.subList?.map((value) => {return <li>{value}</li>} )}</ul>
+                                            <ul>{value.subList?.map((value) => {return <li className='noDeco'>{value}</li>} )}</ul>
                                             <a href={value.path}>
                                                 Leer más
                                             </a>
