@@ -41,9 +41,6 @@ export default () => {
                                 confianza y ofrecer un valor excepcional a
                                 nuestros clientes
                             </p>
-                            <a href="">
-                                Leer más
-                            </a>
                         </div>
                     </div>
                 </div>
