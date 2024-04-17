@@ -8,6 +8,9 @@ body {
   background-color: #ffffff;
   overflow-x: hidden;
 }
+p {
+  text-align: justify;
+}
 
 .layout_padding {
   padding: 90px 0;
