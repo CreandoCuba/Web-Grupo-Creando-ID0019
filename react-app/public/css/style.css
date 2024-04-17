@@ -496,12 +496,6 @@ a:focus {
 .service_section .btn-box a:hover {
   background-color: #007fa4;
 }
-
-.about_section {
-  background-color: #232323;
-  color: #ffffff;
-}
-
 .about_section .heading_container {
   margin-bottom: 45px;
 }
