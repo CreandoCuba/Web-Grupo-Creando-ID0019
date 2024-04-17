@@ -131,7 +131,7 @@ const pages = [
     },
     {
         path:'/PorQueNosotros',
-        label: 'Por que Elegirnos?',
+        label: 'Elígenos',
         element: <WhyPage/>
     },
     {
