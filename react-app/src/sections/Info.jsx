@@ -1,5 +1,7 @@
+import {pages} from "../App";
+import {Link} from "react-router-dom";
 
-export default () => {
+const Info = () => {
     return (
 
         <section className="info_section layout_padding2">
@@ -49,7 +51,7 @@ export default () => {
                     <div className="col-md-6 col-lg-3 info_col">
                         <div className="info_detail">
                             <h4>
-                                Info
+                                Informacion
                             </h4>
                             <p>
                                 necessary, making this the first true generator on the Internet. It uses a
@@ -60,24 +62,16 @@ export default () => {
                     <div className="col-md-6 col-lg-2 mx-auto info_col">
                         <div className="info_link_box">
                             <h4>
-                                Links
+                                Enlaces
                             </h4>
                             <div className="info_links">
-                                <a className="active" href="index.html">
-                                    Home
-                                </a>
-                                <a className="" href="about.html">
-                                    About
-                                </a>
-                                <a className="" href="service.html">
-                                    Services
-                                </a>
-                                <a className="" href="why.html">
-                                    Why Us
-                                </a>
-                                <a className="" href="team.html">
-                                    Team
-                                </a>
+                                {
+                                    pages.map((value, index) => {return(
+                                            <Link className="active" to={value.path}>
+                                                {value.label}
+                                            </Link>
+                                    )})
+                                }
                             </div>
                         </div>
                     </div>
@@ -99,3 +93,5 @@ export default () => {
 
     )
 }
+
+export default Info;

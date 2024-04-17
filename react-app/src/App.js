@@ -1,4 +1,4 @@
-import {Route, RouterProvider, Routes} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 import IndexPage from "./pages/IndexPage";
 import ServicesPage from "./pages/ServicesPage";
 import AboutPage from "./pages/AboutPage";
@@ -160,9 +160,9 @@ function App() {
                           )])
                       else return mainRoute
                   })]
-
                   }
               </Routes>
+
           </div>
       )
 }

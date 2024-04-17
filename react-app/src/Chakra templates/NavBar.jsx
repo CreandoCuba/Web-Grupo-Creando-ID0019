@@ -128,7 +128,7 @@ const DesktopNav = ({NAV_ITEMS}) => {
                                 }}>
                                 {[
                                     navItem.label,
-                                    navItem.children? (<ChevronDownIcon/>): null
+                                    navItem.children? (<ChevronDownIcon key={navItem.label}/>): null
                                 ]}
                             </Link>
                         </PopoverTrigger>
