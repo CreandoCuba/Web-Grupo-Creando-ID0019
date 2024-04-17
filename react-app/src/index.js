@@ -10,7 +10,7 @@ const ScrollToTop = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, [pathname]);
-	return null;
+	return (<div/>);
 }
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
