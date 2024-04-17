@@ -38,6 +38,9 @@ p {
 .noDeco{
   list-style: none;
 }
+.insideDeco{
+  list-style: inside;
+}
 .heading_container {
   display: -webkit-box;
   display: -ms-flexbox;
