@@ -18,7 +18,7 @@ const mainImgRoute = 'images/services/'
 
 const pages = [
     {
-        path:'/',
+        path:'/inicio',
         label:'Inicio',
         element:<IndexPage/>
     },
@@ -148,6 +148,7 @@ function App() {
           <div>
               <NavBar NavItems={pages}/>
               <Routes>
+                  <Route key={'/'} path={'/'} element={<IndexPage/>} />
                   {[pages.map((value, index)=>{
                       const mainRoute = (<Route
                           key={value.path}
