@@ -5,7 +5,7 @@ import Footer from "../../sections/Footer";
 export default () => {
     return(
         <div>
-            <Stack paddingX='15%' py='70px'>
+            <Stack paddingX='15%' py='40px'>
                 <Heading>
                     Servicios de Creacion de Audiovisuales
                 </Heading>

@@ -28,6 +28,7 @@ export default function WithSubnavigation({NavItems}) {
     const { isOpen, onToggle } = useDisclosure()
 
     return (
+        <div>
         <Box
             pos='fixed'
             top='0'
@@ -56,18 +57,13 @@ export default function WithSubnavigation({NavItems}) {
                         aria-label={'Toggle Navigation'}
                     />
                 </Flex>
-                <Text
-                    textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-                    fontFamily={'heading'}
-                    fontSize='23px'
-                    fontWeight='500'
-                    color={useColorModeValue('gray.700', 'white')}>
-                    Creando
-                </Text>
-                <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+                <div className="img-box">
+                    <img src="images/slider-img.png" alt="Creando" id='navBarLogo'/>
+                </div>
+                <Flex flex={{base: 1}} justify={{base: 'center', md: 'start'}}>
 
 
-                    <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
+                    <Flex display={{base: 'none', md: 'flex'}} ml={10}>
                         <DesktopNav NAV_ITEMS={NavItems} />
                     </Flex>
                 </Flex>
@@ -100,6 +96,11 @@ export default function WithSubnavigation({NavItems}) {
                 <MobileNav NAV_ITEMS={NavItems}/>
             </Collapse>
         </Box>
+        <Box top='0'
+             height='60px'
+             w='full'
+             zIndex={29}/>
+        </div>
     )
 }
 

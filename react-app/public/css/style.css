@@ -41,6 +41,10 @@ p {
 .insideDeco{
   list-style: inside;
 }
+#navBarLogo{
+  height: 100%;
+  width: 50px;
+}
 .heading_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -251,12 +255,10 @@ a:focus {
 }
 
 .custom_nav-container .navbar-toggler[aria-expanded="true"] span {
-  -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
 .custom_nav-container .navbar-toggler[aria-expanded="true"] span::before, .custom_nav-container .navbar-toggler[aria-expanded="true"] span::after {
-  -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   top: 0;
 }
@@ -276,7 +278,7 @@ a:focus {
   position: relative;
   padding: 45px 0 145px 0;
   background-size: cover;
-  background-position: 50% 50 %;
+  background-position: 50% 50%;
 }
 
 .slider_section .row {
@@ -637,7 +639,6 @@ li{
   -webkit-transition: all .1s;
   transition: all .1s;
   margin-top: 45px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#002759), to(#002b64));
   background: linear-gradient(to bottom, #002759, #002b64);
 }
 
