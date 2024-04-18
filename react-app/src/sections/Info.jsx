@@ -10,7 +10,7 @@ const Info = () => {
                     <div className="col-md-6 col-lg-3 info_col">
                         <div className="info_contact">
                             <h4>
-                                Address
+                                Dirección
                             </h4>
                             <div className="contact_link_box">
                                 <a href="">
@@ -54,8 +54,8 @@ const Info = () => {
                                 Informacion
                             </h4>
                             <p>
-                                necessary, making this the first true generator on the Internet. It uses a
-                                dictionary of over 200 Latin words, combined with a handful
+                                Recuerde que siempre puede conocer mas acerca de
+                                los servicios que ofrecemos contactando con nosotros
                             </p>
                         </div>
                     </div>
