@@ -3,7 +3,7 @@ import {Center, Container, Divider, Heading, Stack, Text} from "@chakra-ui/react
 
 export default () => {
     return (
-        <Stack className="why_section layout_padding" px={'200px'}>
+        <Stack className="why_section layout_padding" px={'15%'}>
             <div className="heading_container heading_center">
                 <h2>
                     Por qué <span>Elegirnos?</span>
