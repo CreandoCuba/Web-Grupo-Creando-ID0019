@@ -24,8 +24,25 @@ import {
 } from '@chakra-ui/icons'
 import {Link as RouterLink} from 'react-router-dom';
 import {Link, LinkProps} from '@chakra-ui/react';
+import './NavBar.css';
+import {useEffect, useState} from "react";
 export default function WithSubnavigation({NavItems}) {
     const { isOpen, onToggle } = useDisclosure()
+    const [heroIdMode,setHeroMode] = useState('heroMode');
+
+    const handleScroll = () => {
+        const isScrolledAtStart = window.scrollY < 50;
+        console.log('Scrolled')
+
+        if (!isScrolledAtStart ) {
+            setHeroMode('normalMode')
+        } else {
+            setHeroMode('heroMode')
+        }
+    }
+    useEffect(()=>{
+        window.addEventListener("scroll", handleScroll);
+    },[])
 
     return (
         <div>
@@ -36,14 +53,16 @@ export default function WithSubnavigation({NavItems}) {
             zIndex={30}
         >
             <Flex
-                bg={useColorModeValue('white', 'gray.800')}
+                id={heroIdMode}
+                /*bg={useColorModeValue('rgba(0,0,0,0.4)', 'gray.800')}
                 color={useColorModeValue('gray.600', 'white')}
+                borderColor={useColorModeValue('gray.400', 'gray.900')}
+                */
                 minH={'60px'}
                 py={{ base: 2 }}
                 px={{ base: 4 }}
                 borderBottom={1}
                 borderStyle={'solid'}
-                borderColor={useColorModeValue('gray.400', 'gray.900')}
                 align={'center'}
             >
                 <Flex
@@ -96,10 +115,10 @@ export default function WithSubnavigation({NavItems}) {
                 <MobileNav NAV_ITEMS={NavItems}/>
             </Collapse>
         </Box>
-        <Box top='0'
+       {/* <Box top='0'
              height='60px'
              w='full'
-             zIndex={29}/>
+             zIndex={29}/>*/}
         </div>
     )
 }
@@ -121,7 +140,7 @@ const DesktopNav = ({NAV_ITEMS}) => {
                                 to={navItem.path ?? '#'}
                                 fontSize={'medium'}
                                 fontWeight={500}
-                                color={linkColor}
+                               /* color={linkColor}*/
                                 mt={"auto"}
                                 _hover={{
                                     textDecoration: 'none',

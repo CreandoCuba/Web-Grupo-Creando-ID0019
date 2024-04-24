@@ -6,12 +6,13 @@ import Why from "../sections/Why";
 import Client from "../sections/Client";
 import Info from "../sections/Info";
 import Footer from "../sections/Footer";
+import CaptionCarousel from "../Chakra templates/Carousel";
 
 
 export default () => {
     return (
         <div>
-
+{/*
             <div className="hero_area">
 
                 <div className="hero_bg_box">
@@ -20,8 +21,8 @@ export default () => {
                     </div>
                 </div>
                 <Hero/>
-            </div>
-
+            </div>*/}
+            <CaptionCarousel/>
             <Service/>
             <About/>
             <Why/>

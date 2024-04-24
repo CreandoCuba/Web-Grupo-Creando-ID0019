@@ -1,0 +1,49 @@
+#heroMode{
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    border-color: rgba(0,0,0,0.4);
+    animation: 200ms linear toHeroMode;
+}
+@keyframes toHeroMode {
+    from{
+        background-color: white;
+        color: #7a7a7a;
+        border-color:  #7a7a7a
+    }
+    to{
+        background-color: rgba(0,0,0,0.4);
+        color: white;
+        border-color: rgba(0,0,0,0.4);
+    }
+}
+#normalMode{
+    background-color: white;
+    color: #7a7a7a;
+    border-color: #c7c7c7;
+    animation: 200ms linear toNormalMode;
+}
+@keyframes toNormalMode {
+    from{
+        background-color: rgba(0,0,0,0.4);
+        color: white;
+        border-color: rgba(0,0,0,0.4);
+    }
+    to{
+        background-color: white;
+        color: #7a7a7a;
+        border-color:  #7a7a7a
+    }
+}
+
+
+#BackdropFilter{
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    padding: 0;
+}
+/*
+.HeroLogo{
+    margin: auto;
+}*/
