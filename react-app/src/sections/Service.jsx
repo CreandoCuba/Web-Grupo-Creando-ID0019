@@ -20,9 +20,9 @@ const services = pages[2].children
                             cada una de las areas.
                         </p>
                     </div>
-                    <SimpleGrid columns={{ base: 1, md: 2, lg: 2 }}>
+                    <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }}>
                         {services.map((value,index) => {return(
-                            <Slide up duration={500} delay={200+100*(index%2)}>
+                            <Slide up duration={500} delay={100*(index%4)} fraction={0.5}>
                                 <Container className="col-md-4 " key={index}>
                                     <div className="box ">
                                         <div className="img-box">
