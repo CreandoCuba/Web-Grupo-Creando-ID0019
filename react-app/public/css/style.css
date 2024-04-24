@@ -41,10 +41,7 @@ p {
 .insideDeco{
   list-style: inside;
 }
-#navBarLogo{
-  height: 100%;
-  width: 50px;
-}
+
 .heading_container {
   display: -webkit-box;
   display: -ms-flexbox;

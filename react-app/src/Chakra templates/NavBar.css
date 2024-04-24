@@ -34,7 +34,10 @@
         border-color:  #7a7a7a
     }
 }
-
+#navBarLogotype{
+    height: 100%;
+    width: 100px;
+}
 
 #BackdropFilter{
     margin: 0;
