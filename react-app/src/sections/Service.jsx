@@ -1,8 +1,7 @@
 import {pages} from "../App";
 import {Link} from "react-router-dom";
 
-const mainImgRoute = 'images/services/'
-export default () => {
+const Service = () => {
 const services = pages[2].children
     return (
 
@@ -21,7 +20,7 @@ const services = pages[2].children
                     </div>
                     <div className="row">
                         {services.map((value,index) => {return(
-                                <div className="col-md-4 ">
+                                <div className="col-md-4 " key={index}>
                                     <div className="box ">
                                         <div className="img-box">
                                             <img src={value.imgRoute} alt="Icono Representativo"/>
@@ -30,10 +29,10 @@ const services = pages[2].children
                                             <h5>
                                                 {value.label}
                                             </h5>
-                                            <ul>{value.subList?.map((value) => {return <li>{value}</li>} )}</ul>
-                                            <a href={value.path}>
+                                            <ul>{value.subList?.map((value, index) => {return <li className='noDeco' key={index}>{value}</li>} )}</ul>
+                                            <Link to={value.path}>
                                                 Leer más
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -45,3 +44,5 @@ const services = pages[2].children
 
     )
 }
+
+export default Service;

@@ -33,14 +33,36 @@ export default () => {
                                 y humanismo.
                             </p>
                             <p>
-                                Nuestro equipo de profesionales se
-                                compromete a entender las necesidades de
-                                nuestros clientes y a ofrecer soluciones a la
-                                medida para generar resultados. Nuestro
-                                objetivo es convertirnos en un socio de
-                                confianza y ofrecer un valor excepcional a
-                                nuestros clientes
+                                Tenemos a <b>vision</b> de ser un Proyecto líder en la
+                                consultoría empresarial integral, con presencia a nivel
+                                nacional, en constante desarrollo de estrategias de negocios
+                                y planes de mejoras, que apoyen a nuestros clientes y al
+                                desarrollo.
                             </p>
+                            <p>
+                                Este Proyecto se crea con la composición de tres
+                                direcciones y la administración de una plataforma:
+                            </p>
+                            <ul className='insideDeco'>
+                                <li>
+                                    Dirección de Negocios.
+                                </li>
+                                <li>
+                                    Dirección de Administración Empresarial.
+                                </li>
+                                <li>
+                                    Dirección de Comunicaciones y Diseño.
+                                </li>
+                                <li>
+                                    Plataforma del Desarrollo Local.
+                                </li>
+                            </ul>
+                            <p>
+                                Nos enorgullece ser una empresa guiada por nobles
+                                valores que son el corazón de nuestra filosofía:
+                                Honestidad, Dignidad, Solidaridad y Justicia.
+                            </p>
+
                         </div>
                     </div>
                 </div>

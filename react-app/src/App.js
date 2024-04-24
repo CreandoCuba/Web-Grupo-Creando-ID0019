@@ -1,4 +1,4 @@
-import {Route, RouterProvider, Routes} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 import IndexPage from "./pages/IndexPage";
 import ServicesPage from "./pages/ServicesPage";
 import AboutPage from "./pages/AboutPage";
@@ -18,7 +18,7 @@ const mainImgRoute = 'images/services/'
 
 const pages = [
     {
-        path:'/',
+        path:'/inicio',
         label:'Inicio',
         element:<IndexPage/>
     },
@@ -131,7 +131,7 @@ const pages = [
     },
     {
         path:'/PorQueNosotros',
-        label: 'Por que Elegirnos?',
+        label: 'Elígenos',
         element: <WhyPage/>
     },
     {
@@ -148,6 +148,7 @@ function App() {
           <div>
               <NavBar NavItems={pages}/>
               <Routes>
+                  <Route key={'/'} path={'/'} element={<IndexPage/>} />
                   {[pages.map((value, index)=>{
                       const mainRoute = (<Route
                           key={value.path}
@@ -160,9 +161,9 @@ function App() {
                           )])
                       else return mainRoute
                   })]
-
                   }
               </Routes>
+
           </div>
       )
 }

@@ -8,12 +8,17 @@
   }
 
   .hero_area {
-    background: linear-gradient(130deg, #231a6f, #0f054c);
+    background-image: url("../images/hero-bg.png");
+    background-position: 50% 0%;
+    background-size: cover;
+    /*background: linear-gradient(130deg, #d7924d, #30476b);*/
   }
+  /*
 
   .hero_area .hero_bg_box {
     display: none;
   }
+  */
 
   .slider_section {
     padding: 45px 0 75px 0;
@@ -41,10 +46,12 @@
 }
 
 @media (max-width: 576px) {
+  /*
   .header_section .header_top .contact_nav a span {
     display: none;
   }
 
+  */
 
   .client_section .client_container {
     width: 100%;
