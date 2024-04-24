@@ -1,5 +1,7 @@
 import {pages} from "../App";
 import {Link} from "react-router-dom";
+import {Slide} from 'react-reveal';
+import {Container, Grid, SimpleGrid} from "@chakra-ui/react";
 
 const Service = () => {
 const services = pages[2].children
@@ -18,9 +20,10 @@ const services = pages[2].children
                             cada una de las areas.
                         </p>
                     </div>
-                    <div className="row">
+                    <SimpleGrid columns={{ base: 1, md: 2, lg: 2 }}>
                         {services.map((value,index) => {return(
-                                <div className="col-md-4 " key={index}>
+                            <Slide up duration={500} delay={200+100*(index%2)}>
+                                <Container className="col-md-4 " key={index}>
                                     <div className="box ">
                                         <div className="img-box">
                                             <img src={value.imgRoute} alt="Icono Representativo"/>
@@ -35,9 +38,10 @@ const services = pages[2].children
                                             </Link>
                                         </div>
                                     </div>
-                                </div>
+                                </Container>
+                            </Slide>
                         )})}
-                    </div>
+                    </SimpleGrid>
                 </div>
             </div>
         </section>
