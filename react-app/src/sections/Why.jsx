@@ -9,7 +9,7 @@ import {Slide} from "react-reveal";
             text:'¿Por qué elegirnos? Porque somos más que una empresa de proyectos,'+
                 ' somos tu socio en el éxito. En cada paso del camino, desde la concepción'+
                 ' hasta la realización, estamos aquí para convertir tus ideas en realidad.',
-            image:"../images/icons/diana.png",
+            image:"./images/icons/diana.png",
         },
         {
             title: 'Somos Versatiles',
