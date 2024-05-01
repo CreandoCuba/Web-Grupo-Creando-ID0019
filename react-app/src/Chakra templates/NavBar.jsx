@@ -22,27 +22,35 @@ import {
     ChevronDownIcon,
     ChevronRightIcon,
 } from '@chakra-ui/icons'
-import {Link as RouterLink} from 'react-router-dom';
+import {Link as RouterLink, useLocation} from 'react-router-dom';
 import {Link, LinkProps} from '@chakra-ui/react';
 import './NavBar.css';
-import {useEffect, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 export default function WithSubnavigation({NavItems}) {
     const { isOpen, onToggle } = useDisclosure()
     const [heroIdMode,setHeroMode] = useState('heroMode');
-
+    const isMain = useRef();
+    const path = useLocation();
+    isMain.current = path.pathname === '/' || path.pathname==='/inicio';
+    console.log(path)
     const handleScroll = () => {
         const isScrolledAtStart = window.scrollY < 50;
         console.log('Scrolled')
 
-        if (!isScrolledAtStart ) {
-            setHeroMode('normalMode')
-        } else {
+        if (isScrolledAtStart && isMain.current) {
             setHeroMode('heroMode')
+        } else {
+            setHeroMode('normalMode')
         }
     }
     useEffect(()=>{
+        handleScroll();
         window.addEventListener("scroll", handleScroll);
     },[])
+
+    useEffect(()=>{
+        handleScroll();
+    },[(path.pathname)])
 
     return (
         <div>
@@ -115,10 +123,10 @@ export default function WithSubnavigation({NavItems}) {
                 <MobileNav NAV_ITEMS={NavItems}/>
             </Collapse>
         </Box>
-       {/* <Box top='0'
+       {isMain? null : <Box top='0'
              height='60px'
              w='full'
-             zIndex={29}/>*/}
+             zIndex={29}/>}
         </div>
     )
 }
