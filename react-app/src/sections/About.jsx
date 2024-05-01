@@ -21,7 +21,7 @@ export default () => {
                     <div className="col-md-6">
                         <div className="detail-box">
                             <h2>
-                                Somos Cr<span>e</span>an<span>do</span>
+                                Somos Creando
                             </h2>
                             <p>
                                 Somos un grupo que brinda servicios de consultoría
