@@ -1,6 +1,48 @@
-
+import {Link as RouterLink, useLocation} from "react-router-dom";
+import React, {useEffect, useRef, useState} from "react";
+import {Button, Center, Container, Flex, Image, Link, Stack, Text} from '@chakra-ui/react'
 export default () => {
-    return (
+    const path = useLocation();
+    const [isMain, setIsMain] = useState(true);
+    useEffect(()=> {
+        setIsMain(path.pathname === '/' || path.pathname==='/inicio');
+    }, [path.pathname])
+
+    if(isMain) {
+        return (
+                <Stack>
+                    <div className="heading_container heading_center">
+                        <h2>
+                            Sobre <span>Nosotros</span>
+                        </h2>
+                        <Text fontSize={'20px'}>
+                            Somos un grupo de <b>Consultoria Empresarial Integral</b> para el sector estatal y privado
+                        </Text>
+
+                    </div>
+                        <Center marginX={'30px'}>
+                                <Image src="images/about-img.png" alt="" margin={'40px'} maxW={'40vw'}/>
+                        <Stack>
+
+                                <h2>
+                                    Somos Creando
+                                </h2>
+                                <Text fontSize='20px'>
+                                    Brindamos servicios de consultoría
+                                    empresarial integral a los actores económicos del
+                                    territorio, para garantizar su rentabilidad y
+                                    sostenibilidad en el tiempo.
+                                </Text>
+                                <Link to={'/SobreNosotros'} p={0} as={RouterLink} backgroundColor='none'>
+                                    <Button bg='orange' colorScheme='orange' color='white'>
+                                        Saber mas
+                                    </Button>
+                                </Link>
+                        </Stack>
+                        </Center>
+                </Stack>
+        )
+    } else return (
 
         <section className="about_section layout_padding">
             <div className="container  ">
@@ -24,7 +66,7 @@ export default () => {
                                 Somos Creando
                             </h2>
                             <p>
-                                Somos un grupo que brinda servicios de consultoría
+                                Brindamos servicios de consultoría
                                 empresarial integral a los actores económicos del
                                 territorio, para garantizar su rentabilidad y
                                 sostenibilidad en el tiempo. Contamos para ello con

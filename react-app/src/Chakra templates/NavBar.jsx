@@ -29,10 +29,10 @@ import {useEffect, useRef, useState} from "react";
 export default function WithSubnavigation({NavItems}) {
     const { isOpen, onToggle } = useDisclosure()
     const [heroIdMode,setHeroMode] = useState('heroMode');
+
     const isMain = useRef();
     const path = useLocation();
     isMain.current = path.pathname === '/' || path.pathname==='/inicio';
-    console.log(path)
     const handleScroll = () => {
         const isScrolledAtStart = window.scrollY < 50;
         console.log('Scrolled')

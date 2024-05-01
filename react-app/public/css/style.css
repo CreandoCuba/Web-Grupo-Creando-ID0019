@@ -484,7 +484,7 @@ a:focus {
   margin-top: 45px;
 }
 
-.service_section .btn-box a {
+.service_section .btn-box {
   display: inline-block;
   padding: 10px 45px;
   background-color: var(--orange);
