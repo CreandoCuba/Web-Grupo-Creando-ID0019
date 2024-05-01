@@ -37,6 +37,10 @@ const Info = () => {
                                         Llamar al +53 53692707
                                     </span>
                                 </a>
+                                <a href="https://www.facebook.com/share/scNCWKjZkCCtUQdm/?mibextid=qi2Omg">
+                                    <i className="fa fa-facebook" aria-hidden="true"></i>
+                                    <span> Perfil en Facebook</span>
+                                </a>
                                 {/*<a href="">
                                     <i className="fa fa-envelope" aria-hidden="true"></i>
                                     <span>
@@ -45,20 +49,7 @@ const Info = () => {
                                 </a>*/}
                             </div>
                         </div>
-                        {/*<div className="info_social">
-                            <a href="GrupoCreando">
-                                <i className="fa fa-facebook" aria-hidden="true"></i>
-                            </a>
-                            <a href="">
-                                <i className="fa fa-twitter" aria-hidden="true"></i>
-                            </a>
-                            <a href="">
-                            <i className="fa fa-linkedin" aria-hidden="true"></i>
-                            </a>
-                            <a href="">
-                                <i className="fa fa-instagram" aria-hidden="true"></i>
-                            </a>
-                        </div>*/}
+                        ?
                     </div>
                     <div className="col-md-6 col-lg-3 info_col">
                         {/*<div className="info_detail">
