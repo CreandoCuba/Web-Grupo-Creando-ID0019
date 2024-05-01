@@ -79,6 +79,17 @@ const team = [
             'Licenciada en Educación Laboral',
         ],
         LinkedIn: 'tamara hdez | LinkedIn',
+    },
+    {
+        name: 'YOSBEL PEÑATE BARCELÓ',
+        image: '/images/Yosbel.jpg',
+        job: 'JEFE DEL DEPARTAMENTO DE DESARROLLO DE SOFTWARE',
+        studies:[
+            'Máster en Informática y Computación',
+            'Ingeniero en Ciencias Informáticas',
+        ],
+        LinkedIn: 'Yosbel (MSc Peñate) Peñate Barceló | LinkedIn',
+        ResearchGate: 'Yosbel Peñate Barceló (researchgate.net)',
     }
 ]
 
