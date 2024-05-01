@@ -166,6 +166,7 @@ const DesktopNav = ({NAV_ITEMS}) => {
                                 border={0}
                                 boxShadow={'xl'}
                                 bg={popoverContentBgColor}
+                                color={'#6c6c6c'}
                                 p={4}
                                 rounded={'xl'}
                                 minW={'sm'}>
