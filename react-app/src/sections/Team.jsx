@@ -1,5 +1,9 @@
 import {SimpleGrid} from "@chakra-ui/react";
 import SocialProfileSimple from "../Chakra templates/ProfileCard";
+import {useLocation} from "react-router-dom";
+import Slider from "react-slick";
+import {useEffect, useState} from "react";
+import {useMediaQuery} from "react-responsive";
 
 const team = [
     {
@@ -93,30 +97,72 @@ const team = [
     }
 ]
 
+
 export default function () {
-    return (
-        <section>
+    const path = useLocation();
+    const [isMain, setIsMain] = useState(true);
+    useEffect(()=> {
+        setIsMain(path.pathname === '/' || path.pathname==='/inicio');
+    }, [path.pathname])
+    const portrait = useMediaQuery({orientation: "portrait"})
+    const SliderSettings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: (portrait? 1:3),
+        slidesToScroll: 1,
+    };
+    if (isMain) {
+        return(
+            <section>
                 <div className="heading_container heading_center">
                     <h2 className="">
                         Nuestro <span> Equipo </span>
                     </h2>
                 </div>
-                <div className="team_container">
-                    <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }}>
-                        {team.map((member, index) => {
-                            return(
-                                <SocialProfileSimple
-                                    name={member.name}
-                                    job={member.job}
-                                    studies={member.studies}
-                                    image={member.image}
-                                    LinkedIn={member.LinkedIn? member.LinkedIn : null}
-                                    ResearchGate={member.ResearchGate? member.ResearchGate : null}
-                                    Email={member.Email? member.Email : null}
-                                />
-                            )})}
-                    </SimpleGrid>
-                </div>
+                <Slider {...SliderSettings}>
+
+                    {team.map((member, index) => {
+                        return (
+                            <SocialProfileSimple
+                                name={member.name}
+                            job={member.job}
+                            studies={member.studies}
+                            image={member.image}
+                            LinkedIn={member.LinkedIn ? member.LinkedIn : null}
+                            ResearchGate={member.ResearchGate ? member.ResearchGate : null}
+                            Email={member.Email ? member.Email : null}
+                        />
+                    )
+                })}
+                </Slider>
+            </section>
+        )
+    }
+    return (
+        <section>
+            <div className="heading_container heading_center">
+                <h2 className="">
+                    Nuestro <span> Equipo </span>
+                </h2>
+            </div>
+            <div className="team_container">
+                <SimpleGrid columns={{base: 1, md: 2, lg: 3}}>
+                    {team.map((member, index) => {
+                        return (
+                            <SocialProfileSimple
+                                name={member.name}
+                                job={member.job}
+                                studies={member.studies}
+                                image={member.image}
+                                LinkedIn={member.LinkedIn ? member.LinkedIn : null}
+                                ResearchGate={member.ResearchGate ? member.ResearchGate : null}
+                                Email={member.Email ? member.Email : null}
+                            />
+                        )
+                    })}
+                </SimpleGrid>
+            </div>
         </section>
     )
 }
