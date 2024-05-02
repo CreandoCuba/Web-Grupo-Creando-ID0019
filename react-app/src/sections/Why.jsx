@@ -113,7 +113,7 @@ const IndexReasonHeader = ({title, image, isLeft, delay, resume}) => {
 export default () => {
 
     return(
-            <Flex direction='column'>
+            <Flex direction='column' my={'100px'}>
                 <div className="heading_container heading_center">
                     <h2>
                         Por qué <span>Elegirnos?</span>
