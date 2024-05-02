@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import {Button, Text} from "@chakra-ui/react";
 
-export default () => {
+const Hero = () => {
     return (
         <section className="slider_section ">
             <div id="customCarousel1" className="carousel slide" data-ride="carousel">
@@ -110,3 +110,5 @@ export default () => {
         </section>
     )
 }
+
+export default Hero;

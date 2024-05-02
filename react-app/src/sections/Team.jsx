@@ -1,4 +1,4 @@
-import {Container, SimpleGrid} from "@chakra-ui/react";
+import {SimpleGrid} from "@chakra-ui/react";
 import SocialProfileSimple from "../Chakra templates/ProfileCard";
 
 const team = [
@@ -93,7 +93,7 @@ const team = [
     }
 ]
 
-export default () => {
+export default function () {
     return (
         <section>
                 <div className="heading_container heading_center">

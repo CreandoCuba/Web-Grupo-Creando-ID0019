@@ -7,7 +7,7 @@ import {
     Center,
     Text,
     Stack,
-    useColorModeValue, Link,
+    useColorModeValue,
 } from '@chakra-ui/react'
 import { BsLinkedin } from "react-icons/bs";
 import { FaResearchgate } from "react-icons/fa";

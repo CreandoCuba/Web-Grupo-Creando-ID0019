@@ -4,10 +4,9 @@ import {
     Box,
     IconButton,
     useBreakpointValue,
-    Stack,
     Heading,
     Text,
-    Container, Flex, Center, Button,
+    Container, Center, Button,
 } from '@chakra-ui/react'
 
 import { ArrowLeftIcon, ArrowRightIcon } from "@chakra-ui/icons";

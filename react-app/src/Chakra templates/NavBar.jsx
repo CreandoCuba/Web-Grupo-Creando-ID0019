@@ -13,7 +13,6 @@ import {
     PopoverTrigger,
     PopoverContent,
     useColorModeValue,
-    useBreakpointValue,
     useDisclosure,
 } from '@chakra-ui/react'
 import {
@@ -23,7 +22,7 @@ import {
     ChevronRightIcon,
 } from '@chakra-ui/icons'
 import {Link as RouterLink, useLocation} from 'react-router-dom';
-import {Link, LinkProps} from '@chakra-ui/react';
+import {Link} from '@chakra-ui/react';
 import './NavBar.css';
 import {useEffect, useRef, useState} from "react";
 export default function WithSubnavigation({NavItems}) {
@@ -132,7 +131,7 @@ export default function WithSubnavigation({NavItems}) {
 }
 
 const DesktopNav = ({NAV_ITEMS}) => {
-    const linkColor = useColorModeValue('gray.600', 'gray.200')
+    /*const linkColor = useColorModeValue('gray.600', 'gray.200')*/
     const linkHoverColor = useColorModeValue('gray.800', 'white')
     const popoverContentBgColor = useColorModeValue('white', 'gray.800')
 

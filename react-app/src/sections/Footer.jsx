@@ -1,6 +1,6 @@
 
 
-export default () => {
+const Footer = () => {
     return (
         <section className="footer_section">
             <div className="container">
@@ -11,3 +11,4 @@ export default () => {
         </section>
     )
 }
+export default Footer;

@@ -1,5 +1,5 @@
 
-export default ()=>{
+const Client = () => {
     return (
 
         <section className="client_section layout_padding">
@@ -114,3 +114,4 @@ export default ()=>{
 
     )
 }
+export default Client

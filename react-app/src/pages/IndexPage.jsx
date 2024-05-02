@@ -1,5 +1,3 @@
-import Header from "../sections/Header";
-import Hero from "../sections/Hero";
 import Service from "../sections/Service";
 import About from "../sections/About";
 import Why from "../sections/Why";
@@ -26,7 +24,7 @@ export default () => {
             <Service/>
             <About/>
             <Why/>
-            {/*<Client/>*/}
+            <Client/>
             <Info/>
             <Footer/>
 
