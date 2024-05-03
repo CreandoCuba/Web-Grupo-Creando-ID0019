@@ -1,16 +1,20 @@
 import Info from "../../sections/Info";
 import Footer from "../../sections/Footer";
 import React from "react";
-import {Heading, Stack, Text} from "@chakra-ui/react";
+import {Center, Heading, Image, Stack, Text} from "@chakra-ui/react";
 
 
 export default () => {
     return(
         <div>
             <Stack paddingX='15%' py='70px'>
-                <Heading>
-                    Servicios de Apoyo al Turismo
-                </Heading>
+                <Center>
+                    <Heading>
+                        Servicios de Apoyo al Turismo
+                    </Heading>
+                    <Image src="/images/services/Turismo.png" alt="" margin={'20px'} maxW={'100px'}/>
+                </Center>
+
                 <h4>
                     Diseño de Destinos y Centros Turísticos
                 </h4>

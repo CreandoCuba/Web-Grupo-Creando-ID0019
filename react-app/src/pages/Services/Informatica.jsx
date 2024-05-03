@@ -1,4 +1,4 @@
-import {Heading, Stack, Text} from "@chakra-ui/react";
+import {Center, Heading, Image, Stack, Text} from "@chakra-ui/react";
 import Info from "../../sections/Info";
 import Footer from "../../sections/Footer";
 
@@ -6,9 +6,13 @@ export default () => {
     return(
         <div>
             <Stack paddingX='15%' py='70px'>
-                <Heading>
-                    Servicios Informáticos
-                </Heading>
+                <Center>
+                    <Heading>
+                        Servicios Informáticos
+                    </Heading>
+                    <Image src="/images/services/Informática.png" alt="" margin={'20px'} maxW={'100px'}/>
+                </Center>
+
                 <Text fontSize='lg'>
                     ¡Impulsa tu presencia en línea y optimiza tus sistemas informáticos con nuestro servicio integral de Creación y Gestión de páginas web y soluciones informáticas!
                 </Text>

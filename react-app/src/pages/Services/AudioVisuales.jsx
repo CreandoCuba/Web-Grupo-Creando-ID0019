@@ -1,14 +1,18 @@
-import {Heading, Stack, Text} from "@chakra-ui/react";
+import {Center, Container, Heading, Image, Stack, Text} from "@chakra-ui/react";
 import Info from "../../sections/Info";
 import Footer from "../../sections/Footer";
 
 export default () => {
     return(
         <div>
-            <Stack paddingX='15%' py='40px'>
-                <Heading>
-                    Servicios de Creacion de Audiovisuales
-                </Heading>
+            <Stack paddingX='15%' py='70px'>
+                <Center>
+                    <Heading>
+                        Servicios de Creacion de Audiovisuales
+                    </Heading>
+                <Image src="/images/services/Fotografía.png" alt="" margin={'20px'} maxW={'100px'}/>
+                </Center>
+
                 <h4>
                     Fotografía Publicitaria: Estudio y Exteriores
                 </h4>

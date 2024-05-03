@@ -1,6 +1,8 @@
 import Header from "../../sections/Header";
 import Features from '../../Chakra templates/Features';
-import {Button, Flex, Stack} from "@chakra-ui/react";
+import {Button, Center, Flex, Stack} from "@chakra-ui/react";
+import React from "react";
+import { Image } from '@chakra-ui/react'
 
 export default () => {
 
@@ -263,11 +265,9 @@ export default () => {
                         </h1>
                     </div>
                     <div className="why_container">
-                        <div className="box">
-                            <div className="img-box">
-                                <img src="/images/services/Administración%20de%20Empresas.png" alt=""/>
-                            </div>
-                        </div>
+                        <Center>
+                            <Image src="/images/services/Administración de Empresas.png" alt="" margin={'20px'} maxW={'100px'}/>
+                        </Center>
                         {featureList}
 
                         {/*<Flex direction={"column"} mt={'50px'}>
