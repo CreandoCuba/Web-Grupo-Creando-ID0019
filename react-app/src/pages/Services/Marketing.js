@@ -10,7 +10,7 @@ export default () => {
                     <Heading>
                         Servicios de Marketing
                     </Heading>
-                    <Image src="/images/services/Marketing y Comunicación.png" alt="" margin={'20px'} maxW={'100px'}/>
+                    <img src={"images/services/Marketing y Comunicación.png"} alt="" style={{margin:'20px', maxWidth:'100px'}}/>
                 </Center>
                 <Text fontSize='lg'>
                 En Creando, estamos comprometidos con impulsar el éxito de tu negocio a través de

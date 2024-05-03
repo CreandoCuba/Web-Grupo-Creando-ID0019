@@ -12,7 +12,7 @@ export default () => {
                     <Heading>
                         Servicios de Apoyo al Turismo
                     </Heading>
-                    <Image src="/images/services/Turismo.png" alt="" margin={'20px'} maxW={'100px'}/>
+                    <img src={"images/services/Turismo.png"} alt="" style={{margin:'20px', maxWidth:'100px'}}/>
                 </Center>
 
                 <h4>

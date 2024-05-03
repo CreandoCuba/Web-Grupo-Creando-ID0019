@@ -24,13 +24,18 @@ export default function ProfileCard({name, image, job, studies, LinkedIn, Resear
                 rounded={'lg'}
                 p={6}
                 textAlign={'center'}>
-                <Avatar
-                    size={'xl'}
-                    src={image}
-                    mb={4}
-                    pos={'relative'}
+                <Center>
 
+                <img
+                    src={image}
+                    style={{
+                        position:'relative',
+                        width: '100px',
+                        borderRadius:'50px'
+                    }}
+                     alt={'foto de perfil'}
                 />
+                </Center>
                 <Heading fontSize={'2xl'} fontFamily={'body'}>
                     {name}
                 </Heading>

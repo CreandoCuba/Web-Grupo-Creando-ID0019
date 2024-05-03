@@ -10,7 +10,7 @@ export default () => {
                     <Heading>
                         Servicios Informáticos
                     </Heading>
-                    <Image src="/images/services/Informática.png" alt="" margin={'20px'} maxW={'100px'}/>
+                    <img src={"images/services/Informática.png"} alt="" style={{margin:'20px', maxWidth:'100px'}}/>
                 </Center>
 
                 <Text fontSize='lg'>

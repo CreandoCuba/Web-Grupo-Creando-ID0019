@@ -10,7 +10,7 @@ export default () => {
                     <Heading>
                         Servicios de Creacion de Audiovisuales
                     </Heading>
-                <Image src="/images/services/Fotografía.png" alt="" margin={'20px'} maxW={'100px'}/>
+                <img src={"images/services/Fotografía.png"} alt="" style={{margin:'20px', maxWidth:'100px'}}/>
                 </Center>
 
                 <h4>

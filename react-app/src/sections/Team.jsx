@@ -8,7 +8,7 @@ import {useMediaQuery} from "react-responsive";
 const team = [
     {
         name: 'WALTER JESÚS NAVEIRA CARREÑO',
-        image: '/images/Walter.jpg',
+        image: 'images/Walter.jpg',
         job: 'PRESIDENTE',
         studies: [
             'Doctor en Ciencias de la Educación',
@@ -20,7 +20,7 @@ const team = [
     },
     {
         name:'ULISES BETANCOURT MORFFIS',
-        image: '/images/Ulises.jpg',
+        image: 'images/Ulises.jpg',
         job:'DIRECTOR DE ADMINISTRACIÓN EMPRESARIAL',
         studies: [
             'Máster en Administración Empresarial',
@@ -42,7 +42,7 @@ const team = [
     },
     {
         name: 'ALEJANDRO RAMOS GUERRA',
-        image: '/images/Alejandro.jpg',
+        image: 'images/Alejandro.jpg',
         job: 'DIRECTOR DE COMUNICACIÓN Y DISEÑO',
         studies: [
             'Máster en Ciencias de la Comunicación',
@@ -53,7 +53,7 @@ const team = [
     },
     {
         name: 'ARMANDO SANTANA MONTES DE OCA',
-        image: '/images/Armando.jpg',
+        image: 'images/Armando.jpg',
         job: 'ADMINISTRADOR DE LA PLATAFORMA PARA EL DESARROLLO LOCAL',
         studies: [
             'Doctor en Ciencias de la Educación',
@@ -65,7 +65,7 @@ const team = [
     },
     {
         name:'ÁNGEL DANLEY RODRÍGUEZ MARTÍNEZ',
-        image: '/images/Ángel Danley.jpg',
+        image: 'images/Ángel Danley.jpg',
         job:'JEFE DEL DEPARTAMENTO DE COMUNICACIÓN',
         studies:[
             'Máster en Ciencias de la Comunicación',
@@ -75,7 +75,7 @@ const team = [
     },
     {
         name: 'TAMARA HERNÁNDEZ MANSO',
-        image: '/images/Tamara.jpg',
+        image: 'images/Tamara.jpg',
         job: 'ESPECIALISTA EN GESTIÓN COMERCIAL',
         studies: [
             'Doctora en Ciencias de la Educación',
@@ -86,7 +86,7 @@ const team = [
     },
     {
         name: 'YOSBEL PEÑATE BARCELÓ',
-        image: '/images/Yosbel.jpg',
+        image: 'images/Yosbel.jpg',
         job: 'JEFE DEL DEPARTAMENTO DE DESARROLLO DE SOFTWARE',
         studies:[
             'Máster en Informática y Computación',

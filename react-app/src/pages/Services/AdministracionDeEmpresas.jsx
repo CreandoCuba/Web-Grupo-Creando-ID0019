@@ -3,7 +3,8 @@ import Features from '../../Chakra templates/Features';
 import {Button, Center, Flex, Stack} from "@chakra-ui/react";
 import React from "react";
 import { Image } from '@chakra-ui/react'
-
+import object from '../../../package.json';
+const homepage = object.homepage;
 export default () => {
 
     const featureList = [
@@ -266,7 +267,7 @@ export default () => {
                     </div>
                     <div className="why_container">
                         <Center>
-                            <Image src="/images/services/Administración de Empresas.png" alt="" margin={'20px'} maxW={'100px'}/>
+                            <img src={"images/services/Administración de Empresas.png"} alt="" style={{margin:'20px', maxWidth:'100px'}}/>
                         </Center>
                         {featureList}
 

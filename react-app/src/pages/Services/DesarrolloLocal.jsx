@@ -11,7 +11,7 @@ export default () => {
                     <Heading>
                         Desarrollo Local
                     </Heading>
-                    <Image src="/images/services/Desarrollo Local.png" alt="" margin={'20px'} maxW={'100px'}/>
+                    <img src={"images/services/Desarrollo Local.png"} alt="" style={{margin:'20px', maxWidth:'100px'}}/>
                 </Center>
 
                 <Text fontSize='lg'>
