@@ -116,7 +116,7 @@ const Why = () => {
             <Flex direction='column' my={'100px'}>
                 <div className="heading_container heading_center">
                     <h2>
-                        Por qué <span>Elegirnos?</span>
+                        ¿Por qué <span>Elegirnos?</span>
                     </h2>
                 </div>
                 {reasonsWhy.map((reason, index) => {
