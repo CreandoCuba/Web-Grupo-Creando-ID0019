@@ -28,13 +28,13 @@ const Info = () => {
                                 <a href="tel:+5353692707">
                                     <i className="fa fa-phone" aria-hidden="true"></i>
                                     <span>
-                                        Llamar al +53 53692707
+                                        +53 53692707
                                     </span>
                                 </a>
                                 <a href="tel:+5354384681">
                                     <i className="fa fa-phone" aria-hidden="true"></i>
                                     <span>
-                                        Llamar al +53 53692707
+                                        +53 53692707
                                     </span>
                                 </a>
                                 <a href="https://www.facebook.com/share/scNCWKjZkCCtUQdm/?mibextid=qi2Omg">
@@ -49,7 +49,6 @@ const Info = () => {
                                 </a>*/}
                             </div>
                         </div>
-                        ?
                     </div>
                     <div className="col-md-6 col-lg-3 info_col">
                         {/*<div className="info_detail">
