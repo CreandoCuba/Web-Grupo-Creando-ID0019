@@ -94,7 +94,7 @@ export default function WithSubnavigation({NavItems}) {
                     </Flex>
                 </Flex>
 
-                <Stack
+                {/*<Stack
                     flex={{ base: 1, md: 0 }}
                     justify={'flex-end'}
                     direction={'row'}
@@ -115,7 +115,7 @@ export default function WithSubnavigation({NavItems}) {
                         }}>
                         Login
                     </Button>
-                </Stack>
+                </Stack>*/}
             </Flex>
 
             <Collapse in={isOpen} animateOpacity>
