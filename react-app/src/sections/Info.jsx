@@ -77,7 +77,7 @@ const Info = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6 col-lg-3 info_col ">
+                    {/*<div className="col-md-6 col-lg-3 info_col ">
                         <h4>
                             Subscribe
                         </h4>
@@ -87,7 +87,7 @@ const Info = () => {
                                 Subscribe
                             </button>
                         </form>
-                    </div>
+                    </div>*/}
                 </div>
             </div>
         </section>
