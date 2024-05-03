@@ -15,8 +15,8 @@ const services = pages[2].children
                             Nuestros <span>Servicios</span>
                         </h2>
                         <p>
-                            Todos nuestros servicios se concretan mediante diagnosticos,
-                            asesorias, acompañamiento, implementacion o seguimiento de
+                            Todos nuestros servicios se concretan mediante diagnósticos,
+                            asesorías, acompañamiento, implementación o seguimiento de
                             cada una de las areas.
                         </p>
                     </div>

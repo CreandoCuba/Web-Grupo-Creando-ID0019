@@ -69,8 +69,8 @@ const pages = [
             },
             {
                 path: '/Informatica',
-                label: 'Informatica',
-                subLabel: 'Paginas Web y Automatizacion de procesos',
+                label: 'Informática',
+                subLabel: 'Paginas Web y Automatización de procesos',
                 element: <Informatica/>,
                 imgRoute: mainImgRoute +'Informática.png',
                 subList: [

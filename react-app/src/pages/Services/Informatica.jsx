@@ -7,7 +7,7 @@ export default () => {
         <div>
             <Stack paddingX='15%' py='70px'>
                 <Heading>
-                    Servicios Informaticos
+                    Servicios Informáticos
                 </Heading>
                 <Text fontSize='lg'>
                     ¡Impulsa tu presencia en línea y optimiza tus sistemas informáticos con nuestro servicio integral de Creación y Gestión de páginas web y soluciones informáticas!
