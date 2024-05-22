@@ -1,147 +1,197 @@
+import {SimpleGrid} from "@chakra-ui/react";
+import SocialProfileSimple from "../Chakra templates/ProfileCard";
+import {useLocation} from "react-router-dom";
+import Slider from "react-slick";
+import {useEffect, useState} from "react";
+import {useMediaQuery} from "react-responsive";
+import '../Chakra templates/slider.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import {ArrowLeftIcon, ArrowRightIcon} from "@chakra-ui/icons";
+
+const team = [
+    {
+        name: 'WALTER JESÚS NAVEIRA CARREÑO',
+        image: 'images/Walter.jpg',
+        job: 'PRESIDENTE',
+        studies: [
+            'Doctor en Ciencias de la Educación',
+            'Máster en Matemática Educativa',
+            'Licenciado en Educación Matemática - Física',
+        ],
+        email: 'walter.creando@gmail.com',
+        ResearchGate: 'Walter Naveira (researchgate.net)',
+    },
+    {
+        name:'ULISES BETANCOURT MORFFIS',
+        image: 'images/Ulises.jpg',
+        job:'DIRECTOR DE ADMINISTRACIÓN EMPRESARIAL',
+        studies: [
+            'Máster en Administración Empresarial',
+            'Ingeniero Industrial',
+        ],
+        email: 'ulises.creando@gmail.com',
+        ResearchGate: 'Ulises Betancourt Morffis (researchgate.net)',
+        LinkedIn:'https://www.linkedin.com/in/ulises-betancourt-morffis-23ab411a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    },
+    {
+        name: 'ARLETT MEDINA RODRÍGUEZ',
+        image: '',
+        job: 'DIRECTOR DE NEGOCIOS',
+        studies: [
+            'Doctor en Ciencias Económicas',
+            'Licenciada en Economía',
+        ],
+        Email: 'arlett.creando@gmail.com'
+    },
+    {
+        name: 'ALEJANDRO RAMOS GUERRA',
+        image: 'images/Alejandro.jpg',
+        job: 'DIRECTOR DE COMUNICACIÓN Y DISEÑO',
+        studies: [
+            'Máster en Ciencias de la Comunicación',
+            'Licenciado en Comunicación Social',
+        ],
+        LinkedIn:  'Alejandro Ramos Guerra | LinkedIn',
+
+    },
+    {
+        name: 'ARMANDO SANTANA MONTES DE OCA',
+        image: 'images/Armando.jpg',
+        job: 'ADMINISTRADOR DE LA PLATAFORMA PARA EL DESARROLLO LOCAL',
+        studies: [
+            'Doctor en Ciencias de la Educación',
+            'Máster en Didácticas de las Humanidades',
+            'Licenciado en Historia y Marxismo Leninismo e Historia',
+        ],
+        LinkedIn: 'Armando Santana Montes de Oca | LinkedIn',
+        ResearchGate: 'Armando Santana Montes de Oca (researchgate.net)',
+    },
+    {
+        name:'ÁNGEL DANLEY RODRÍGUEZ MARTÍNEZ',
+        image: 'images/Ángel Danley.jpg',
+        job:'JEFE DEL DEPARTAMENTO DE COMUNICACIÓN',
+        studies:[
+            'Máster en Ciencias de la Comunicación',
+            'Licenciado en Comunicación Social',
+        ],
+        LinkedIn:  'Angel Rodriguez Martinez | LinkedIn',
+    },
+    {
+        name: 'TAMARA HERNÁNDEZ MANSO',
+        image: 'images/Tamara.jpg',
+        job: 'ESPECIALISTA EN GESTIÓN COMERCIAL',
+        studies: [
+            'Doctora en Ciencias de la Educación',
+            'Licenciada en Gestión Sociocultural',
+            'Licenciada en Educación Laboral',
+        ],
+        LinkedIn: 'tamara hdez | LinkedIn',
+    },
+    {
+        name: 'YOSBEL PEÑATE BARCELÓ',
+        image: 'images/Yosbel.jpg',
+        job: 'JEFE DEL DEPARTAMENTO DE DESARROLLO DE SOFTWARE',
+        studies:[
+            'Máster en Informática y Computación',
+            'Ingeniero en Ciencias Informáticas',
+        ],
+        LinkedIn: 'Yosbel (MSc Peñate) Peñate Barceló | LinkedIn',
+        ResearchGate: 'Yosbel Peñate Barceló (researchgate.net)',
+    }
+]
 
 
-export default () => {
-    return (
-        <section className="team_section layout_padding">
-            <div className="container-fluid">
+export default function () {
+    const path = useLocation();
+    const [isMain, setIsMain] = useState(true);
+    useEffect(()=> {
+        setIsMain(path.pathname === '/' || path.pathname==='/inicio');
+    }, [path.pathname])
+    const portrait = useMediaQuery({orientation: "portrait"})
+
+    if (isMain) {
+        const NextArrow = ({ onClick }) => {
+            return (
+                <ArrowRightIcon
+                    display='block'
+                    size='40px'
+                    bgColor='none'
+                    margin='auto'
+                    onClick={onClick} />
+            );
+        };
+
+        const PrevArrow = ({ onClick }) => {
+            return (
+                <ArrowLeftIcon
+                    display='block'
+                    size='40px'
+                    bgColor='none'
+                    margin='auto'
+                    onClick={onClick}
+                />
+            );
+        };
+        const SliderSettings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: (portrait? 1:3),
+            slidesToScroll: 1,
+
+            nextArrow: <NextArrow />,
+            prevArrow: <PrevArrow />,
+        };
+        return(
+            <section>
                 <div className="heading_container heading_center">
                     <h2 className="">
-                        Our <span> Team</span>
+                        Nuestro <span> Equipo </span>
                     </h2>
                 </div>
+                <Slider className='slider' dotsClass="custom-dots" style={{display:'flex', flexDir:'row'}} {...SliderSettings}>
 
-                <div className="team_container">
-                    <div className="row">
-                        <div className="col-lg-3 col-sm-6">
-                            <div className="box ">
-                                <div className="img-box">
-                                    <img src="images/team-1.jpg" className="img1" alt=""/>
-                                </div>
-                                <div className="detail-box">
-                                    <h5>
-                                        Joseph Brown
-                                    </h5>
-                                    <p>
-                                        Marketing Head
-                                    </p>
-                                </div>
-                                <div className="social_box">
-                                    <a href="#">
-                                        <i className="fa fa-facebook" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i className="fa fa-twitter" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i className="fa fa-linkedin" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i className="fa fa-instagram" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i className="fa fa-youtube-play" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-sm-6">
-                            <div className="box ">
-                                <div className="img-box">
-                                    <img src="images/team-2.jpg" className="img1" alt=""/>
-                                </div>
-                                <div className="detail-box">
-                                    <h5>
-                                        Nancy White
-                                    </h5>
-                                    <p>
-                                        Marketing Head
-                                    </p>
-                                </div>
-                                <div className="social_box">
-                                    <a href="#">
-                                        <i className="fa fa-facebook" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i className="fa fa-twitter" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i className="fa fa-linkedin" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i className="fa fa-instagram" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i className="fa fa-youtube-play" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-sm-6">
-                            <div className="box ">
-                                <div className="img-box">
-                                    <img src="images/team-3.jpg" className="img1" alt=""/>
-                                </div>
-                                <div className="detail-box">
-                                    <h5>
-                                        Earl Martinez
-                                    </h5>
-                                    <p>
-                                        Marketing Head
-                                    </p>
-                                </div>
-                                <div className="social_box">
-                                    <a href="#">
-                                        <i className="fa fa-facebook" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i className="fa fa-twitter" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i className="fa fa-linkedin" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i className="fa fa-instagram" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i className="fa fa-youtube-play" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-sm-6">
-                            <div className="box ">
-                                <div className="img-box">
-                                    <img src="images/team-4.jpg" className="img1" alt=""/>
-                                </div>
-                                <div className="detail-box">
-                                    <h5>
-                                        Josephine Allard
-                                    </h5>
-                                    <p>
-                                        Marketing Head
-                                    </p>
-                                </div>
-                                <div className="social_box">
-                                    <a href="#">
-                                        <i className="fa fa-facebook" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i className="fa fa-twitter" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i className="fa fa-linkedin" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i className="fa fa-instagram" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i className="fa fa-youtube-play" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    {team.map((member, index) => {
+                        return (
+                            <SocialProfileSimple
+                                name={member.name}
+                            job={member.job}
+                            studies={member.studies}
+                            image={member.image}
+                            LinkedIn={member.LinkedIn ? member.LinkedIn : null}
+                            ResearchGate={member.ResearchGate ? member.ResearchGate : null}
+                            Email={member.Email ? member.Email : null}
+                        />
+                    )
+                })}
+                </Slider>
+            </section>
+        )
+    }
+    return (
+        <section>
+            <div className="heading_container heading_center">
+                <h2 className="">
+                    Nuestro <span> Equipo </span>
+                </h2>
+            </div>
+            <div className="team_container">
+                <SimpleGrid columns={{base: 1, md: 2, lg: 3}}>
+                    {team.map((member, index) => {
+                        return (
+                            <SocialProfileSimple
+                                name={member.name}
+                                job={member.job}
+                                studies={member.studies}
+                                image={member.image}
+                                LinkedIn={member.LinkedIn ? member.LinkedIn : null}
+                                ResearchGate={member.ResearchGate ? member.ResearchGate : null}
+                                Email={member.Email ? member.Email : null}
+                            />
+                        )
+                    })}
+                </SimpleGrid>
             </div>
         </section>
     )

@@ -1,5 +1,3 @@
-import Header from "../sections/Header";
-import Hero from "../sections/Hero";
 import Service from "../sections/Service";
 import About from "../sections/About";
 import Why from "../sections/Why";
@@ -7,6 +5,7 @@ import Client from "../sections/Client";
 import Info from "../sections/Info";
 import Footer from "../sections/Footer";
 import CaptionCarousel from "../Chakra templates/Carousel";
+import Team from "../sections/Team";
 
 
 export default () => {
@@ -26,7 +25,8 @@ export default () => {
             <Service/>
             <About/>
             <Why/>
-            {/*<Client/>*/}
+            <Client/>
+            <Team/>
             <Info/>
             <Footer/>
 

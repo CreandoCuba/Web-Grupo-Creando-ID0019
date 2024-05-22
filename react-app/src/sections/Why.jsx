@@ -1,4 +1,4 @@
-import {Center, Container, Divider, Flex, Heading, Image, Stack, Text} from "@chakra-ui/react";
+import {Center, Container, Flex, Heading, Image, Text} from "@chakra-ui/react";
 import {Slide} from "react-reveal";
 
     const reasonsWhy = [
@@ -110,18 +110,19 @@ const IndexReasonHeader = ({title, image, isLeft, delay, resume}) => {
         </Slide>
     )
 }
-export default () => {
+const Why = () => {
 
     return(
-            <Flex direction='column'>
+            <Flex direction='column' my={'100px'}>
                 <div className="heading_container heading_center">
                     <h2>
-                        Por qué <span>Elegirnos?</span>
+                        ¿Por qué <span>Elegirnos?</span>
                     </h2>
                 </div>
                 {reasonsWhy.map((reason, index) => {
                     return (
                         <IndexReasonHeader
+                            key={index}
                             title={reason.title}
                             image={reason.image}
                             resume={reason.resume}
@@ -183,3 +184,4 @@ export default () => {
     //     </Stack>
     // )
 }
+export default Why;

@@ -4,10 +4,9 @@ import {
     Box,
     IconButton,
     useBreakpointValue,
-    Stack,
     Heading,
     Text,
-    Container, Flex, Center, Button,
+    Container, Center, Button,
 } from '@chakra-ui/react'
 
 import { ArrowLeftIcon, ArrowRightIcon } from "@chakra-ui/icons";
@@ -43,7 +42,7 @@ export default function CaptionCarousel() {
     const cards = [
         {
             title: 'Te ayudamos a crecer',
-            text: "Nuestra empresa brinda variados servicios para ayudarte a crecer entre los cuales se incluyen servicios informaticos, de contabilidad o de diseño.",
+            text: "Nuestra empresa brinda variados servicios para ayudarte a crecer entre los cuales se incluyen servicios informáticos, de contabilidad o de diseño.",
             image: 'images/carousel-1.png',
             buttonLabel: 'Saber Más',
             buttonRef: '/PorQueNosotros',

@@ -1,14 +1,18 @@
 import Info from "../../sections/Info";
 import Footer from "../../sections/Footer";
-import {Heading, Stack, Text} from "@chakra-ui/react";
+import {Center, Heading, Image, Stack, Text} from "@chakra-ui/react";
 
 export default () => {
     return(
         <div>
             <Stack paddingX='15%' py='70px'>
+                <Center>
                 <Heading>
                     Servicios de Contabilidad y Finanzas
                 </Heading>
+                <img src={"images/services/Contabilidad y Finanzas.png"} alt="" style={{margin:'20px', maxWidth:'100px'}}/>
+                </Center>
+
                 <h4>
                     Análisis Financiero para la Toma de Decisiones
                 </h4>

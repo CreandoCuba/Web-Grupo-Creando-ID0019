@@ -1,4 +1,4 @@
-import {Heading, Stack, Text} from "@chakra-ui/react";
+import {Center, Heading, Image, Stack, Text} from "@chakra-ui/react";
 import Info from "../../sections/Info";
 import Footer from "../../sections/Footer";
 
@@ -6,9 +6,12 @@ export default () => {
     return(
         <div>
             <Stack paddingX='15%' py='70px'>
-                <Heading>
-                    Servicios de Marketing
-                </Heading>
+                <Center>
+                    <Heading>
+                        Servicios de Marketing
+                    </Heading>
+                    <img src={"images/services/Marketing y Comunicación.png"} alt="" style={{margin:'20px', maxWidth:'100px'}}/>
+                </Center>
                 <Text fontSize='lg'>
                 En Creando, estamos comprometidos con impulsar el éxito de tu negocio a través de
                 soluciones estratégicas y creativas de investigación de mercados, marketing y comunicación corporativa.

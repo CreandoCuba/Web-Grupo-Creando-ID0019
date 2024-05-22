@@ -1,7 +1,7 @@
 import {pages} from "../App";
 import {Link} from "react-router-dom";
 import {Slide} from 'react-reveal';
-import {Container, Grid, SimpleGrid} from "@chakra-ui/react";
+import {Container, SimpleGrid} from "@chakra-ui/react";
 
 const Service = () => {
 const services = pages[2].children
@@ -15,8 +15,8 @@ const services = pages[2].children
                             Nuestros <span>Servicios</span>
                         </h2>
                         <p>
-                            Todos nuestros servicios se concretan mediante diagnosticos,
-                            asesorias, acompañamiento, implementacion o seguimiento de
+                            Todos nuestros servicios se concretan mediante diagnósticos,
+                            asesorías, acompañamiento, implementación o seguimiento de
                             cada una de las areas.
                         </p>
                     </div>

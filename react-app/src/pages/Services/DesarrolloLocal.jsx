@@ -1,4 +1,4 @@
-import {Heading, Stack, Text} from "@chakra-ui/react";
+import {Center, Heading, Image, Stack, Text} from "@chakra-ui/react";
 import Info from "../../sections/Info";
 import Footer from "../../sections/Footer";
 
@@ -7,9 +7,13 @@ export default () => {
         <div>
 
             <Stack paddingX='15%' py='70px'>
-                <Heading>
-                    Desarrollo Local
-                </Heading>
+                <Center>
+                    <Heading>
+                        Desarrollo Local
+                    </Heading>
+                    <img src={"images/services/Desarrollo Local.png"} alt="" style={{margin:'20px', maxWidth:'100px'}}/>
+                </Center>
+
                 <Text fontSize='lg'>
                     ¡Potencia el desarrollo y la identidad de tu ciudad con nuestro servicio integral de consultoría y estrategias de desarrollo local!
                 </Text>

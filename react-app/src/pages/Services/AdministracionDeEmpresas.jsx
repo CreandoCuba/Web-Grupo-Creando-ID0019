@@ -1,7 +1,10 @@
 import Header from "../../sections/Header";
 import Features from '../../Chakra templates/Features';
-import {Button, Flex, Stack} from "@chakra-ui/react";
-
+import {Button, Center, Flex, Stack} from "@chakra-ui/react";
+import React from "react";
+import { Image } from '@chakra-ui/react'
+import object from '../../../package.json';
+const homepage = object.homepage;
 export default () => {
 
     const featureList = [
@@ -77,7 +80,7 @@ export default () => {
             columns: 2,
             results: [
                 {
-                  title: 'Vision',
+                  title: 'Visión',
                   text: 'Evita Trabajar a ciegas'
                 },
                 {
@@ -85,17 +88,17 @@ export default () => {
                     text: 'Permite la eficiencia como resultado del orden.'
                 },
                 {
-                    title: 'Coordinacion',
+                    title: 'Coordinación',
                     text: 'Maneje las acciones de su empresa de forma mas organizada'
                 },
                 {
-                    title: 'Optimizacion',
+                    title: 'Optimización',
                     text: 'Mejore el uso de sus recursos',
                 }
             ]
         },
         {
-            title:"PROCEDIMIENTOS Y METODOLOGIAS PARA EL FUNCIONAMIENTO EMPRESARIAL",
+            title:"PROCEDIMIENTOS Y METODOLOGÍAS PARA EL FUNCIONAMIENTO EMPRESARIAL",
             intro:"La eliminación de los defectos, la mejora de la moral y la reducción del tiempo para comercializar productos y servicios, " +
                 "son objetivos esenciales y comunes de casi todas las organizaciones. La llave para lograr estos objetivos yace en entender " +
                 "primero, y después cambiar, los procesos subyacentes que introducen las ineficacias, defectos, baja satisfacción o el bajo " +
@@ -122,7 +125,7 @@ export default () => {
                     text: 'Le ayudamos a tomar desiciones mas certeras y eficaces'
                 },
                 {
-                    title:'Comprension',
+                    title:'Comprensión',
                     text: 'Contar con la forma de hacer, lo que permite entender el buen funcionamiento organizacional.'
                 }
             ]
@@ -144,7 +147,7 @@ export default () => {
                     text: 'Conozca sus objetivos para tomar decisiones mas eficientemente'
                 },
                 {
-                    title: 'Analisis',
+                    title: 'Análisis',
                     text: 'Revise los detalles sobre equilibrio financiero de su empresa'
                 },
                 {
@@ -175,7 +178,7 @@ export default () => {
                     text:'Incremento de las ofertas de trabajo y empleo'
                 },
                 {
-                    title: 'Mnimice las perdidas',
+                    title: 'Minimice las perdidas',
                     text: 'Disminución de las pérdidas de producción'
                 }
             ]
@@ -220,7 +223,7 @@ export default () => {
                         'producción/servicios y al cliente'
                 },
                 {
-                    title: 'Optimizacion',
+                    title: 'Optimización',
                     text: 'Conseguir una mayor optimización en la gestión.'
                 },
                 {
@@ -259,18 +262,16 @@ export default () => {
                 <div className="container">
                     <div className="heading_container heading_center">
                         <h1>
-                            Administracion de Empresas
+                            Administración de Empresas
                         </h1>
                     </div>
                     <div className="why_container">
-                        <div className="box">
-                            <div className="img-box">
-                                <img src="/images/services/Administración%20de%20Empresas.png" alt=""/>
-                            </div>
-                        </div>
+                        <Center>
+                            <img src={"images/services/Administración de Empresas.png"} alt="" style={{margin:'20px', maxWidth:'100px'}}/>
+                        </Center>
                         {featureList}
 
-                        <Flex direction={"column"} mt={'50px'}>
+                        {/*<Flex direction={"column"} mt={'50px'}>
                         <Button
                             colorScheme='orange'
                             backgroundColor='orange'
@@ -281,9 +282,7 @@ export default () => {
                         >
                             Contactenos
                         </Button>
-                        </Flex>
-
-
+                        </Flex>*/}
                     </div>
                 </div>
             </section>

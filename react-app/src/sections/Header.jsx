@@ -1,7 +1,7 @@
 import {pages} from "../App";
 import {Link} from "react-router-dom";
 
-export default ()=> {
+const Header = ()=> {
     return (
         <header className="header_section">
             <div className="container-fluid">
@@ -52,3 +52,5 @@ export default ()=> {
         </header>
     )
 }
+
+export default Header;

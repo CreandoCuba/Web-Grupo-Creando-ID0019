@@ -13,7 +13,6 @@ import {
     PopoverTrigger,
     PopoverContent,
     useColorModeValue,
-    useBreakpointValue,
     useDisclosure,
 } from '@chakra-ui/react'
 import {
@@ -22,27 +21,35 @@ import {
     ChevronDownIcon,
     ChevronRightIcon,
 } from '@chakra-ui/icons'
-import {Link as RouterLink} from 'react-router-dom';
-import {Link, LinkProps} from '@chakra-ui/react';
+import {Link as RouterLink, useLocation} from 'react-router-dom';
+import {Link} from '@chakra-ui/react';
 import './NavBar.css';
-import {useEffect, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 export default function WithSubnavigation({NavItems}) {
     const { isOpen, onToggle } = useDisclosure()
     const [heroIdMode,setHeroMode] = useState('heroMode');
 
+    const isMain = useRef();
+    const path = useLocation();
+    isMain.current = path.pathname === '/' || path.pathname==='/inicio';
     const handleScroll = () => {
         const isScrolledAtStart = window.scrollY < 50;
         console.log('Scrolled')
 
-        if (!isScrolledAtStart ) {
-            setHeroMode('normalMode')
-        } else {
+        if (isScrolledAtStart && isMain.current) {
             setHeroMode('heroMode')
+        } else {
+            setHeroMode('normalMode')
         }
     }
     useEffect(()=>{
+        handleScroll();
         window.addEventListener("scroll", handleScroll);
     },[])
+
+    useEffect(()=>{
+        handleScroll();
+    },[(path.pathname)])
 
     return (
         <div>
@@ -87,7 +94,7 @@ export default function WithSubnavigation({NavItems}) {
                     </Flex>
                 </Flex>
 
-                <Stack
+                {/*<Stack
                     flex={{ base: 1, md: 0 }}
                     justify={'flex-end'}
                     direction={'row'}
@@ -108,23 +115,23 @@ export default function WithSubnavigation({NavItems}) {
                         }}>
                         Login
                     </Button>
-                </Stack>
+                </Stack>*/}
             </Flex>
 
             <Collapse in={isOpen} animateOpacity>
                 <MobileNav NAV_ITEMS={NavItems}/>
             </Collapse>
         </Box>
-       {/* <Box top='0'
+       {isMain? null : <Box top='0'
              height='60px'
              w='full'
-             zIndex={29}/>*/}
+             zIndex={29}/>}
         </div>
     )
 }
 
 const DesktopNav = ({NAV_ITEMS}) => {
-    const linkColor = useColorModeValue('gray.600', 'gray.200')
+    /*const linkColor = useColorModeValue('gray.600', 'gray.200')*/
     const linkHoverColor = useColorModeValue('gray.800', 'white')
     const popoverContentBgColor = useColorModeValue('white', 'gray.800')
 
@@ -158,6 +165,7 @@ const DesktopNav = ({NAV_ITEMS}) => {
                                 border={0}
                                 boxShadow={'xl'}
                                 bg={popoverContentBgColor}
+                                color={'#6c6c6c'}
                                 p={4}
                                 rounded={'xl'}
                                 minW={'sm'}>
