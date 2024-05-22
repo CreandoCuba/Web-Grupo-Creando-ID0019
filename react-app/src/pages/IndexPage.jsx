@@ -25,7 +25,7 @@ export default () => {
             <Service/>
             <About/>
             <Why/>
-{/*            <Client/>*/}
+            <Client/>
             <Team/>
             <Info/>
             <Footer/>
