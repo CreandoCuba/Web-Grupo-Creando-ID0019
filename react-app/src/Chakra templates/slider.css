@@ -1,0 +1,28 @@
+.slider{
+    margin-top: 30px;
+}
+.custom-dots {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: transparent;
+    font-size: 0;
+}
+
+.custom-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.custom-dots li button {
+    border: none;
+    background: #ccc;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.custom-dots li.slick-active button {
+    background: #000;
+}

@@ -4,6 +4,10 @@ import {useLocation} from "react-router-dom";
 import Slider from "react-slick";
 import {useEffect, useState} from "react";
 import {useMediaQuery} from "react-responsive";
+import '../Chakra templates/slider.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import {ArrowLeftIcon, ArrowRightIcon} from "@chakra-ui/icons";
 
 const team = [
     {
@@ -105,14 +109,40 @@ export default function () {
         setIsMain(path.pathname === '/' || path.pathname==='/inicio');
     }, [path.pathname])
     const portrait = useMediaQuery({orientation: "portrait"})
-    const SliderSettings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: (portrait? 1:3),
-        slidesToScroll: 1,
-    };
+
     if (isMain) {
+        const NextArrow = ({ onClick }) => {
+            return (
+                <ArrowRightIcon
+                    display='block'
+                    size='40px'
+                    bgColor='none'
+                    margin='auto'
+                    onClick={onClick} />
+            );
+        };
+
+        const PrevArrow = ({ onClick }) => {
+            return (
+                <ArrowLeftIcon
+                    display='block'
+                    size='40px'
+                    bgColor='none'
+                    margin='auto'
+                    onClick={onClick}
+                />
+            );
+        };
+        const SliderSettings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: (portrait? 1:3),
+            slidesToScroll: 1,
+
+            nextArrow: <NextArrow />,
+            prevArrow: <PrevArrow />,
+        };
         return(
             <section>
                 <div className="heading_container heading_center">
@@ -120,7 +150,7 @@ export default function () {
                         Nuestro <span> Equipo </span>
                     </h2>
                 </div>
-                <Slider {...SliderSettings}>
+                <Slider className='slider' dotsClass="custom-dots" style={{display:'flex', flexDir:'row'}} {...SliderSettings}>
 
                     {team.map((member, index) => {
                         return (
