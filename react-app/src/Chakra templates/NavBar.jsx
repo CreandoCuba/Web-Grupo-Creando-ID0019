@@ -94,15 +94,15 @@ export default function WithSubnavigation({NavItems}) {
                     </Flex>
                 </Flex>
 
-                {/*<Stack
+                <Stack
                     flex={{ base: 1, md: 0 }}
                     justify={'flex-end'}
                     direction={'row'}
                     spacing={6}>
-                    <Button as={'a'} fontSize={'sm'} fontWeight={400} variant={'link'} href={'#'}>
-                        Registrarse
+                    <Button as={'a'} fontSize={'m'} className={heroIdMode} fontWeight={400} variant={'link'} href={'https://docs.google.com/forms/d/e/1FAIpQLSfR5ppQ9CpYNd7ntCh0Vbz39EPO-Ip6ZH4USn_FhPCFurXoZA/viewform?usp=sharing'}>
+                        Subscribirse
                     </Button>
-                    <Button
+            {/*    <Button
                         as={'a'}
                         display={{ base: 'none', md: 'inline-flex' }}
                         fontSize={'sm'}
@@ -114,8 +114,8 @@ export default function WithSubnavigation({NavItems}) {
                             bg: 'orange.300',
                         }}>
                         Login
-                    </Button>
-                </Stack>*/}
+                    </Button>*/}
+                </Stack>
             </Flex>
 
             <Collapse in={isOpen} animateOpacity>

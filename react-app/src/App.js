@@ -14,6 +14,7 @@ import Diseno from "./pages/Services/Diseno";
 import Turismo from "./pages/Services/Turismo";
 import Contabilidad from "./pages/Services/Contabilidad";
 import AudioVisuales from "./pages/Services/AudioVisuales";
+import Contact from "./pages/Contact";
 
 const mainImgRoute = 'images/services/'
 
@@ -145,6 +146,11 @@ const pages = [
       label: 'Noticias',
       element:<News/>
     },
+    /*{
+        path: '/contacto',
+        label: 'Contacto',
+        element: <Contact/>
+    }*/
 
 
 ]
