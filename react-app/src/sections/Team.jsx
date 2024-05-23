@@ -36,7 +36,7 @@ const team = [
     },
     {
         name: 'ARLETT MEDINA RODRÍGUEZ',
-        image: '',
+        image: 'images/Arlett.png',
         job: 'DIRECTOR DE NEGOCIOS',
         studies: [
             'Doctor en Ciencias Económicas',
