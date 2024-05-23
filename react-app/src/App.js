@@ -4,6 +4,7 @@ import ServicesPage from "./pages/ServicesPage";
 import AboutPage from "./pages/AboutPage";
 import WhyPage from "./pages/WhyPage";
 import TeamPage from "./pages/TeamPage";
+import News from "./pages/News";
 import AdministracionDeEmpresas from "./pages/Services/AdministracionDeEmpresas";
 import NavBar from './Chakra templates/NavBar'
 import DesarrolloLocal from "./pages/Services/DesarrolloLocal";
@@ -138,6 +139,11 @@ const pages = [
         path:'/Equipo',
         label: 'Equipo',
         element: <TeamPage/>
+    },
+    {
+      path: '/noticias',
+      label: 'Noticias',
+      element:<News/>
     },
 
 
