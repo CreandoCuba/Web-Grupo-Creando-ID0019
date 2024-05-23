@@ -59,7 +59,7 @@ export default function CaptionCarousel() {
             text: "Pronto estaremos publicando blogs e informaciones sobre la empresa, los servicios que ofrecemos y sobre nuestros clientes.",
             image: 'images/carousel-3.jpg',
             buttonLabel: 'Ver Informaciones',
-            buttonRef: '#',
+            buttonRef: '/noticias',
         },
     ]
 

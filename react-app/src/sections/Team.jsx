@@ -19,8 +19,8 @@ const team = [
             'Máster en Matemática Educativa',
             'Licenciado en Educación Matemática - Física',
         ],
-        email: 'walter.creando@gmail.com',
-        ResearchGate: 'Walter Naveira (researchgate.net)',
+        Email: 'mailto:walter.creando@gmail.com',
+        ResearchGate: 'https://www.researchgate.net/profile/Walter-Naveira',
     },
     {
         name:'ULISES BETANCOURT MORFFIS',
@@ -30,19 +30,19 @@ const team = [
             'Máster en Administración Empresarial',
             'Ingeniero Industrial',
         ],
-        email: 'ulises.creando@gmail.com',
-        ResearchGate: 'Ulises Betancourt Morffis (researchgate.net)',
-        LinkedIn:'https://www.linkedin.com/in/ulises-betancourt-morffis-23ab411a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+        Email: 'mailto:ulises.creando@gmail.com',
+        ResearchGate: 'https://www.researchgate.net/profile/Ulises-Betancourt-Morffis',
+        LinkedIn:'https://www.linkedin.com/in/ulises-betancourt-morffis-23ab411a0/',
     },
     {
         name: 'ARLETT MEDINA RODRÍGUEZ',
-        image: '',
+        image: 'images/Arlett.png',
         job: 'DIRECTOR DE NEGOCIOS',
         studies: [
             'Doctor en Ciencias Económicas',
             'Licenciada en Economía',
         ],
-        Email: 'arlett.creando@gmail.com'
+        Email: 'mailto:arlett.creando@gmail.com'
     },
     {
         name: 'ALEJANDRO RAMOS GUERRA',
@@ -52,8 +52,8 @@ const team = [
             'Máster en Ciencias de la Comunicación',
             'Licenciado en Comunicación Social',
         ],
-        LinkedIn:  'Alejandro Ramos Guerra | LinkedIn',
-
+        Email: 'mailto:alejandrorg.creando@gmail.com',
+        LinkedIn:  'https://www.linkedin.com/in/alejandro-ramos-guerra-765619143/',
     },
     {
         name: 'ARMANDO SANTANA MONTES DE OCA',
@@ -64,8 +64,9 @@ const team = [
             'Máster en Didácticas de las Humanidades',
             'Licenciado en Historia y Marxismo Leninismo e Historia',
         ],
-        LinkedIn: 'Armando Santana Montes de Oca | LinkedIn',
-        ResearchGate: 'Armando Santana Montes de Oca (researchgate.net)',
+        Email: 'mailto:desarrollo.creando@gmail.com',
+        LinkedIn: 'https://www.linkedin.com/in/armando-santana-montes-de-oca-b62ba719a/',
+        ResearchGate: 'https://www.researchgate.net/profile/Armando-Santana-Montes-De-Oca',
     },
     {
         name:'ÁNGEL DANLEY RODRÍGUEZ MARTÍNEZ',
@@ -75,7 +76,7 @@ const team = [
             'Máster en Ciencias de la Comunicación',
             'Licenciado en Comunicación Social',
         ],
-        LinkedIn:  'Angel Rodriguez Martinez | LinkedIn',
+        LinkedIn:  'https://www.linkedin.com/in/angel-rodriguez-martinez-ab3939137/',
     },
     {
         name: 'TAMARA HERNÁNDEZ MANSO',
@@ -86,7 +87,7 @@ const team = [
             'Licenciada en Gestión Sociocultural',
             'Licenciada en Educación Laboral',
         ],
-        LinkedIn: 'tamara hdez | LinkedIn',
+        LinkedIn: 'https://www.linkedin.com/in/tamara-hdez-5991301aa/',
     },
     {
         name: 'YOSBEL PEÑATE BARCELÓ',
@@ -96,8 +97,8 @@ const team = [
             'Máster en Informática y Computación',
             'Ingeniero en Ciencias Informáticas',
         ],
-        LinkedIn: 'Yosbel (MSc Peñate) Peñate Barceló | LinkedIn',
-        ResearchGate: 'Yosbel Peñate Barceló (researchgate.net)',
+        LinkedIn: 'https://www.linkedin.com/in/yosbel-penate-barcelo/',
+        ResearchGate: 'https://www.researchgate.net/profile/Yosbel-Penate-Barcelo',
     }
 ]
 

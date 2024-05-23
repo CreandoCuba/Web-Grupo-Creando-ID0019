@@ -4,6 +4,7 @@ import ServicesPage from "./pages/ServicesPage";
 import AboutPage from "./pages/AboutPage";
 import WhyPage from "./pages/WhyPage";
 import TeamPage from "./pages/TeamPage";
+import News from "./pages/News";
 import AdministracionDeEmpresas from "./pages/Services/AdministracionDeEmpresas";
 import NavBar from './Chakra templates/NavBar'
 import DesarrolloLocal from "./pages/Services/DesarrolloLocal";
@@ -13,6 +14,7 @@ import Diseno from "./pages/Services/Diseno";
 import Turismo from "./pages/Services/Turismo";
 import Contabilidad from "./pages/Services/Contabilidad";
 import AudioVisuales from "./pages/Services/AudioVisuales";
+import Contact from "./pages/Contact";
 
 const mainImgRoute = 'images/services/'
 
@@ -139,6 +141,16 @@ const pages = [
         label: 'Equipo',
         element: <TeamPage/>
     },
+    {
+      path: '/noticias',
+      label: 'Noticias',
+      element:<News/>
+    },
+    /*{
+        path: '/contacto',
+        label: 'Contacto',
+        element: <Contact/>
+    }*/
 
 
 ]
