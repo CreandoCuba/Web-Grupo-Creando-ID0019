@@ -62,7 +62,7 @@ const team = [
         studies: [
             'Doctor en Ciencias de la Educación',
             'Máster en Didácticas de las Humanidades',
-            'Licenciado en Historia y Marxismo Leninismo e Historia',
+            'Licenciado en Educación y Marxismo Leninismo e Historia',
         ],
         Email: 'mailto:desarrollo.creando@gmail.com',
         LinkedIn: 'https://www.linkedin.com/in/armando-santana-montes-de-oca-b62ba719a/',
