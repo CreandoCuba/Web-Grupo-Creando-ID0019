@@ -3,17 +3,15 @@ import Team from "../sections/Team";
 import Info from "../sections/Info";
 import Footer from "../sections/Footer";
 import Hiring from "../sections/Hiring";
+import {Stack} from "@chakra-ui/react";
 
 export default () => {
     return(
-        <div class="sub_page">
-
-
+        <Stack marginTop='80px'>
             <Team/>
-            <Hiring/>
             <Info/>
             <Footer/>
 
-        </div>
+        </Stack>
     )
 }
