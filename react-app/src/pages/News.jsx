@@ -6,10 +6,12 @@ const News = () => {
 
             <Flex direction={"column"} textAlign='center'>
                 <Heading>
-                    Actualmente no tenemos noticias.
+                    Actualmente esta seccion se encuentra en mantenimiento.
                 </Heading>
                 <Text fontSize={'lg'} textAlign='center'>
-                    Proximamente estaremos publicando
+                    Proximamente estaremos publicando noticias.
+                    Si quieres recibir un correo de notificación una vez
+                    sean publicadas, no olvides subscribirte a nuestra página.
                 </Text>
                 <Center>
                     <img src={'images/construction.png'} alt={'decorative pic'} style={{width:'200px'}}/>
