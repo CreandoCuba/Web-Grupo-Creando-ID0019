@@ -37,8 +37,8 @@ const pages = [
         children:[
             {
                 path:'/administraciondeempresas',
-                label: 'Administracion de Empresas',
-                subLabel: 'Estrategia, Logistica y Planificacion',
+                label: 'Administración de Empresas',
+                subLabel: 'Estrategia, Logística y Planificación',
                 element: <AdministracionDeEmpresas/>,
                 imgRoute: mainImgRoute +'Administración de Empresas.png',
                 subList: [
@@ -121,7 +121,7 @@ const pages = [
             {
                 path: '/Contabilidad',
                 label: 'Contabilidad y Finanzas',
-                subLabel: 'Cooperamos a gestionar tu economía',
+                subLabel: 'Cooperamos para gestionar tu economía',
                 element: <Contabilidad/>,
                 imgRoute: mainImgRoute +'Contabilidad y Finanzas.png',
                 subList:[
