@@ -75,7 +75,7 @@ const IndexReasonHeader = ({title, image, isLeft, delay, resume}) => {
             <Slide
                 left
                 duration={500}
-                fraction={1}
+                fraction={0.5}
                 delay={delay}
                 key={title}
             >
