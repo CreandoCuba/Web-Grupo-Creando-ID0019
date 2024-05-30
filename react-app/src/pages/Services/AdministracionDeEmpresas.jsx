@@ -4,13 +4,15 @@ import {Button, Center, Flex, Stack} from "@chakra-ui/react";
 import React from "react";
 import { Image } from '@chakra-ui/react'
 import object from '../../../package.json';
+import Info from "../../sections/Info";
+import Footer from "../../sections/Footer";
 const homepage = object.homepage;
 export default () => {
 
     const featureList = [
         {
             title:"DISEÑO DE MODELOS DE NEGOCIOS",
-            intro:"El diseño de negocios permite a las organizaciones deliberadamente crear un modelo de negocio para demostrar la" +
+            intro:"El diseño de negocios permite a las organizaciones deliberadamente crear un modelo de negocio para demostrar la " +
                 "sostenibilidad en el mercado mediante la validación de los componentes básicos de un modelo de negocio. El diseñador " +
                 "de negocios puede ayudar a una organización a construir un modelo de negocio probando fácilmente sus suposiciones " +
                 "más riesgosas contra el mercado.",
@@ -64,8 +66,8 @@ export default () => {
                     text: 'Optimice su negocio identificando cuales acciones son la prioridad'
                 },
                 {
-                    title: 'Mínima o cero pérdida',
-                    text: 'Disminuya al minimo las perdidas por operaciones'
+                    title: 'Mínima o cero pérdidas',
+                    text: 'Disminuya al mínimo las perdidas por operaciones'
                 }
             ]
         },
@@ -110,10 +112,10 @@ export default () => {
             results:[
                 {
                     title: 'Mayor capacidad',
-                    text: 'para proporcionar regularmente productos y servicios que satisfagan los requisitos del cliente'
+                    text: 'Para proporcionar regularmente productos y servicios que satisfagan los requisitos del cliente'
                 },
                 {
-                    title: 'Facílite oportunidades',
+                    title: 'Facilite oportunidades',
                     text: 'Busque formas de aumentar la satisfacción tus clientes.'
                 },
                 /*{
@@ -121,8 +123,8 @@ export default () => {
                     text: 'Trate y estudie el contexto y objetivos de su empresa'
                 },*/
                 {
-                    title: 'Toma de desiciones',
-                    text: 'Le ayudamos a tomar desiciones mas certeras y eficaces'
+                    title: 'Toma de decisiones',
+                    text: 'Le ayudamos a tomar decisiones mas certeras y eficaces'
                 },
                 {
                     title:'Comprensión',
@@ -140,11 +142,11 @@ export default () => {
             results: [
                 {
                     title: 'Conocimiento',
-                    text: 'Aprenda mas detalles de la situación actual de su empresa'
+                    text: 'Aprenda más detalles de la situación actual de su empresa'
                 },
                 {
                     title: 'Objetivos',
-                    text: 'Conozca sus objetivos para tomar decisiones mas eficientemente'
+                    text: 'Conozca sus objetivos para tomar decisiones más eficientemente'
                 },
                 {
                     title: 'Análisis',
@@ -187,17 +189,17 @@ export default () => {
             title: 'ENCADENAMIENTO PRODUCTIVOS',
             intro: 'El estudio de la empresa como un todo, en busca de la optimización del sistema total y no de cada una de las ' +
                 'partes independientes resulta una política adecuada y necesaria, por lo que la teoría del encadenamiento ' +
-                'productivo, se convierte en una herramienta sumamente necesaria y potente para los estudios de gestión de ' +
+                'productivo se convierte en una herramienta sumamente necesaria y potente para los estudios de gestión de ' +
                 'operaciones y para la toma de decisiones económicamente fundamentados.',
             results: [
             ]
         },
         {
-            title: 'GESTIÓN DE CERTIFICACION ES DE LOS SISTEMAS EMPRESARIALES',
-            intro: 'La certificación es el procedimiento, mediante el cual una tercera parte asegura por escrito que un producto, proceso o' +
-                'servicio está conforme con los requisitos especificados. La certificación consiste pues, en que una organización (tercera' +
-                'parte) competente y debidamente reconocida realiza la evaluación de un producto, proceso o sistema de otra organización,' +
-                'con la cual no mantiene relaciones contractuales contra los requisitos establecidos en una norma también reconocida, y' +
+            title: 'GESTIÓN DE CERTIFICACIÓN ES DE LOS SISTEMAS EMPRESARIALES',
+            intro: 'La certificación es el procedimiento, mediante el cual una tercera parte asegura por escrito que un producto, proceso o ' +
+                'servicio está conforme con los requisitos especificados. La certificación consiste pues, en que una organización (tercera ' +
+                'parte) competente y debidamente reconocida realiza la evaluación de un producto, proceso o sistema de otra organización, ' +
+                'con la cual no mantiene relaciones contractuales contra los requisitos establecidos en una norma también reconocida, y ' +
                 'como resultado emite un certificado de conformidad y una autorización para utilizar la marca de conformidad.',
             columns: 3,
             results: [
@@ -256,7 +258,6 @@ export default () => {
         )
     })
     return(
-
         <div className="sub_page">
             <section className="why_section layout_padding">
                 <div className="container">
@@ -286,6 +287,8 @@ export default () => {
                     </div>
                 </div>
             </section>
+            <Info/>
+            <Footer/>
         </div>
 
 )

@@ -12,7 +12,7 @@ import {Slide} from "react-reveal";
             image:"./images/icons/diana.png",
         },
         {
-            title: 'Somos Versatiles',
+            title: 'Somos Versátiles',
             resume: 'Nos encanta enfrentarnos a desafíos y encontrar soluciones'+
                 ' únicas para cada proyecto.',
             text: 'En primer lugar, somos un equipo de apasionados por la innovación y'+
@@ -57,7 +57,7 @@ import {Slide} from "react-reveal";
             image:'./images/icons/dinero.png',
         },
         {
-            title: 'Hacemos desde paginas web hasta Aplicaciones',
+            title: 'Hacemos desde páginas web hasta Aplicaciones',
             resume: 'Creamos soluciones personalizadas que se adaptan a tus necesidades específicas ',
             text: 'Por último, pero no menos importante, nuestro equipo de desarrollo de ' +
                 'software está listo para llevar tus ideas al siguiente nivel. ¿Tienes ' +

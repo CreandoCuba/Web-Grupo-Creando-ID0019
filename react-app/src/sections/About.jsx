@@ -19,7 +19,7 @@ export default () => {
                             Sobre <span>Nosotros</span>
                         </h2>
                         <Text fontSize={'20px'} mx={'30px'}>
-                            Somos un grupo de <b>Consultoria Empresarial Integral</b> para el sector estatal y privado
+                            Somos un grupo de <b>Consultoría Empresarial Integral</b> para el sector estatal y privado
                         </Text>
                     </div>
                     {portrait?
@@ -104,7 +104,7 @@ export default () => {
                                 y humanismo.
                             </p>
                             <p>
-                                Tenemos a <b>vision</b> de ser un Proyecto líder en la
+                                Tenemos a <b>visión</b> de ser un Proyecto líder en la
                                 consultoría empresarial integral, con presencia a nivel
                                 nacional, en constante desarrollo de estrategias de negocios
                                 y planes de mejoras, que apoyen a nuestros clientes y al
