@@ -1,5 +1,6 @@
 import {Center, Container, Flex, Heading, Image, Text} from "@chakra-ui/react";
 import {Slide} from "react-reveal";
+import {useMediaQuery} from "react-responsive";
 
     const reasonsWhy = [
         {
@@ -70,6 +71,11 @@ import {Slide} from "react-reveal";
     ];
 
 const IndexReasonHeader = ({title, image, isLeft, delay, resume}) => {
+    const isPortrait = useMediaQuery({orientation: "portrait"});
+    const iconMargin = isPortrait? '15px':'40px';
+    const iconWidth = isPortrait? '80px':'100px';
+    const textfontSize = isPortrait? 'ml':'lg';
+    const headerFontSize = isPortrait? '24px': '30px'
     if(isLeft){
         return(
             <Slide
@@ -79,14 +85,14 @@ const IndexReasonHeader = ({title, image, isLeft, delay, resume}) => {
                 delay={delay}
                 key={title}
             >
-                <Center m={'50px'}>
-                    <Container px={0} mx={0}>
-                        <Heading fontSize='30px'>{title}</Heading>
-                        <Text fontSize='lg'>
+                <Center mx={'50px'} my={'30px'}>
+                    <Container px={0} mx={0} minWidth={'150px'}>
+                        <Heading fontSize={headerFontSize}>{title}</Heading>
+                        <Text fontSize={textfontSize}>
                             {resume}
                         </Text>
                     </Container>
-                    <Image src={image} alt='icon' w={'100px'} mx={'40px'}/>
+                    <Image src={image} alt='icon' w={iconWidth} mx={iconMargin}/>
                 </Center>
             </Slide>
         )
@@ -98,11 +104,11 @@ const IndexReasonHeader = ({title, image, isLeft, delay, resume}) => {
             delay={delay}
             key={title}
         >
-            <Center m={'50px'}>
-                <Image src={image} alt='icon' w={'100px'} mx={'40px'}/>
-                <Container px={0} mx={0}>
-                    <Heading fontSize='30px'>{title}</Heading>
-                    <Text fontSize='lg'>
+            <Center mx={'50px'} my={'30px'} >
+                <Image src={image} alt='icon' w={iconWidth} mx={iconMargin}/>
+                <Container px={0} mx={0} minWidth={'150px'}>
+                    <Heading fontSize={headerFontSize}>{title}</Heading>
+                    <Text fontSize={textfontSize}>
                         {resume}
                     </Text>
                 </Container>
