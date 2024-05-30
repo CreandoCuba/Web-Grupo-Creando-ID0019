@@ -24,7 +24,10 @@ export default () => {
                     </div>
                     {portrait?
                         <Stack marginX={'30px'}>
-                            <Image src="images/about-img.png" alt="" margin={'40px'} maxW={'40vw'}/>
+                            <Center>
+                                <Image src="images/about-img.png" alt="" margin='auto' maxW={'90vw'}/>
+                            </Center>
+
                             <h2>
                                 Somos Creando
                             </h2>
