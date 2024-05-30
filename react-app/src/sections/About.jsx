@@ -45,12 +45,14 @@ export default () => {
                         </Stack>
                         :
                         <Center marginX={'30px'}>
+                            <Flex direction={'row'}>
+
                             <Image src="images/about-img.png" alt="" margin={'40px'} maxW={'40vw'}/>
-                            <Stack>
+                            <Stack margin={'40px'}>
                                 <h2>
                                     Somos Creando
                                 </h2>
-                                <Text fontSize='20px'>
+                                <Text fontSize='20px' maxW={'500px'}>
                                     Brindamos servicios de consultoría
                                     empresarial integral a los actores económicos del
                                     territorio, para garantizar su rentabilidad y
@@ -62,6 +64,7 @@ export default () => {
                                     </Button>
                                 </Link>
                             </Stack>
+                            </Flex>
                         </Center>
                             }
 
