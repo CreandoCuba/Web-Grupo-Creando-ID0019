@@ -47,7 +47,7 @@ export default () => {
                         <Center marginX={'30px'}>
                             <Flex direction={'row'}>
 
-                            <Image src="images/about-img.png" alt="" margin={'40px'} maxW={'40vw'}/>
+                            <Image src="images/about-img.png" alt="" margin={'40px'} w={'40vw'} maxW={'400px'}/>
                             <Stack margin={'40px'}>
                                 <h2>
                                     Somos Creando
