@@ -6,10 +6,10 @@ const News = () => {
 
             <Flex direction={"column"} textAlign='center'>
                 <Heading>
-                    Actualmente esta seccion se encuentra en mantenimiento.
+                    Actualmente esta sección se encuentra en mantenimiento.
                 </Heading>
                 <Text fontSize={'lg'} textAlign='center'>
-                    Proximamente estaremos publicando noticias.
+                    Proximamente estaremos publicando noticias y blogs.
                     Si quieres recibir un correo de notificación una vez
                     sean publicadas, no olvides subscribirte a nuestra página.
                 </Text>
