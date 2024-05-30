@@ -23,6 +23,7 @@ export default function ProfileCard({name, image, job, studies, LinkedIn, Resear
                 boxShadow={'2xl'}
                 rounded={'lg'}
                 p={6}
+                minH={'450px'}
                 textAlign={'center'}>
                 <Center>
 

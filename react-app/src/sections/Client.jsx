@@ -2,7 +2,7 @@ import SocialProfileSimple from "../Chakra templates/ProfileCard";
 import Slider from "react-slick";
 import {ArrowLeftIcon, ArrowRightIcon} from "@chakra-ui/icons";
 import {useMediaQuery} from "react-responsive";
-import {Center} from "@chakra-ui/react";
+import {Center, Heading, Text} from "@chakra-ui/react";
 
 const Client = () => {
     const clients=[
@@ -65,10 +65,14 @@ const Client = () => {
     const SliderSettings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 400,
         slidesToShow: (portrait? 1:3),
         slidesToScroll: 1,
-
+        autoplay: true,
+        autoplaySpeed:2000,
+        pauseOnFocus:false,
+        pauseOnHover:false,
+        rtl:true,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
     };
@@ -86,6 +90,7 @@ const Client = () => {
                         return(
                             <Center width={'200px'} paddingTop={'20px'}>
                                 <img style={{margin:'auto' ,width:'200px', backgroundPosition:'center',}} src={value.image} alt={'logo de'+value.name}/>
+                                <Text fontWeight='600' textAlign='center' width='200px' margin='auto' mt={'20px'}>{value.name}</Text>
                             </Center>
                         )
                     })}
