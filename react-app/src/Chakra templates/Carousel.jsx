@@ -134,7 +134,7 @@ export default function CaptionCarousel() {
                                 <Heading fontSize={{base: '3xl', md: '4xl', lg: '5xl' }} color={'white'}>
                                     {card.title}
                                 </Heading>
-                                <Text fontSize={{ base: 'md', lg: 'lg' }} color="white" w='100%'>
+                                <Text fontSize={{ base: 'md', lg: 'lg' }} color="white" w='100%' padding={'25px'}>
                                     {card.text}
                                 </Text>
                                 <Link to={card.buttonRef}>
