@@ -7,11 +7,8 @@ export default () => {
     return(
         <div class="sub_page">
 
-
-
-
+            
         <Service/>
-s
         <Info/>
         <Footer/>
         </div>
