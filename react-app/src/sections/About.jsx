@@ -79,7 +79,7 @@ export default () => {
                                     Sobre <span>Nosotros</span>
                                 </h2>
                                 <p>
-                                    Somos un grupo de <b>Consultoria Empresarial Integral</b> para el sector estatal y
+                                    Somos un grupo de <b>Consultoría Empresarial Integral</b> para el sector estatal y
                                     privado
                                 </p>
                             </div>
