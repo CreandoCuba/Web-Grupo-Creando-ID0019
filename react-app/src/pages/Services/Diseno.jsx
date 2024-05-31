@@ -12,71 +12,47 @@ export default () => {
                     </Heading>
                     <img src={"images/services/Diseño.png"} alt="" style={{margin:'20px', maxWidth:'100px'}}/>
                 </Center>
+                <Text fontSize='lg'>
+                    ¡Potencia tu marca con un logotipo cautivador! Diseñamos logotipos impactantes que hablan por sí mismos, reflejando la esencia única de tu negocio y atrayendo a tu público objetivo.
+                </Text>
+                <h4>
+                    Infografías que informan y cautivan
+                </h4>
+                <Text fontSize='lg'>
+                    Transforma los datos complejos en historias visuales atractivas. Nuestras infografías presentan información de manera clara y concisa, convirtiendo los conceptos abrumadores en comprensibles y memorables.
+                </Text>
 
-                <Text fontSize='lg'>
-                    ¡Potencia tu presencia en línea y optimiza tus sistemas informáticos con nuestros servicios
-                    integrales de Creación y Gestión de Páginas Web y soluciones informáticas!
-                </Text>
-                <Text fontSize='lg'>
-                    En Creando, nos especializamos en proporcionar soluciones tecnológicas completas para
-                    empresas y organizaciones que desean destacarse en el mundo digital. Con nuestro equipo de expertos
-                    en desarrollo web y tecnología de la información, estamos comprometidos a ofrecer servicios de alta
-                    calidad que impulsen el crecimiento y el éxito de tu negocio.
-                </Text>
                 <h4>
-                    Creación y Gestión de Páginas Web:
+                    Etiquetas que venden
                 </h4>
                 <Text fontSize='lg'>
-                    Diseñamos y desarrollamos sitios web profesionales y atractivos que representan la esencia de tu
-                    marca y atraen a tus clientes objetivo. Desde páginas web informativas hasta tiendas en línea
-                    totalmente funcionales, nos encargamos de cada etapa del proceso, desde el diseño hasta la
-                    implementación y el mantenimiento continuo.
+                    Destaca tus productos con etiquetas personalizadas que atraigan la atención de los clientes y promuevan tus ventas. Creamos diseños llamativos que comunican tu mensaje de marca y hacen que tus productos sobresalgan en los estantes.
                 </Text>
+
                 <h4>
-                    Informatización de Procesos:
+                    Personajes que cobran vida
                 </h4>
                 <Text fontSize='lg'>
-                    Optimiza la eficiencia de tu empresa digitalizando y automatizando tus procesos internos.
-                    Implementamos sistemas y herramientas que simplifican tareas, mejoran la colaboración entre
-                    equipos y aumentan la productividad de tu negocio.
+                    Crea mundos imaginarios y personajes memorables que den vida a tu marca. Nuestros diseñadores desarrollan personajes únicos y atractivos que se conectan con tu audiencia y crean un impacto emocional.
                 </Text>
+
                 <h4>
-                    Seguridad Informática:
+                    Stands para ferias que impactan
                 </h4>
                 <Text fontSize='lg'>
-                    Protege la integridad de tus datos y sistemas con nuestras soluciones avanzadas de seguridad
-                    informática. Desde la evaluación de riesgos hasta la implementación de medidas de protección,
-                    nos aseguramos de que tu empresa esté protegida contra amenazas cibernéticas en todo momento.
+                    Atrae la atención en las ferias comerciales con stands personalizados diseñados para impresionar. Creamos espacios únicos y llamativos que reflejan tu identidad de marca y cautivan a los asistentes.
                 </Text>
                 <h4>
-                    Administración de Redes:
+                    Diseño de interiores que inspira
                 </h4>
                 <Text fontSize='lg'>
-                    Mantén tus redes informáticas funcionando sin problemas con nuestra administración profesional
-                    de redes. Desde la configuración inicial hasta la optimización y el monitoreo continuo, nos
-                    aseguramos de que tu infraestructura de red sea segura, confiable y eficiente.
+                    Transforma tu espacio de trabajo o hogar en un oasis inspirador. Nuestros diseñadores crean espacios estéticamente agradables y funcionales que mejoran la productividad, la creatividad y el bienestar.
                 </Text>
                 <h4>
-                    Soporte a Sistemas Informáticos:
+                    Diseño gráfico integral
                 </h4>
                 <Text fontSize='lg'>
-                    Contamos con un equipo de expertos técnicos listos para proporcionarte asistencia rápida y
-                    efectiva para resolver cualquier problema informático que puedas enfrentar. Ya sea un problema
-                    con tu computadora personal o un fallo en tu servidor, estamos aquí para ayudarte a recuperar tu
-                    productividad rápidamente.
-                </Text>
-                <h4>
-                    Mantenimiento de Ordenadores y Servidores:
-                </h4>
-                <Text fontSize='lg'>
-                    Mantén tus equipos y servidores en óptimas condiciones con nuestro servicio de mantenimiento
-                    preventivo. Realizamos actualizaciones de software, copias de seguridad regulares y monitoreo
-                    constante para garantizar un rendimiento óptimo y una operación sin problemas.
-                </Text>
-                <Text fontSize='lg'>
-                    En Creando, estamos comprometidos a brindarte soluciones informáticas completas y
-                    personalizadas que te ayuden a alcanzar tus objetivos comerciales y a destacarte en el mercado
-                    digital. ¡Contáctanos hoy mismo y lleva tu empresa al siguiente nivel tecnológico!
+                    Somos tu socio integral para todas tus necesidades de diseño gráfico. Desde logotipos y etiquetas hasta infografías y diseño de interiores, te brindamos soluciones creativas que impulsan tu negocio y deleitan a tus clientes.
                 </Text>
             </Stack>
             <Info/>

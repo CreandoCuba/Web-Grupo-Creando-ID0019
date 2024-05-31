@@ -15,6 +15,7 @@ import Turismo from "./pages/Services/Turismo";
 import Contabilidad from "./pages/Services/Contabilidad";
 import AudioVisuales from "./pages/Services/AudioVisuales";
 import Contact from "./pages/Contact";
+import HiringPage from "./pages/HiringPage";
 
 const mainImgRoute = 'images/services/'
 
@@ -36,8 +37,8 @@ const pages = [
         children:[
             {
                 path:'/administraciondeempresas',
-                label: 'Administracion de Empresas',
-                subLabel: 'Estrategia, Logistica y Planificacion',
+                label: 'Administración de Empresas',
+                subLabel: 'Estrategia, Logística y Planificación',
                 element: <AdministracionDeEmpresas/>,
                 imgRoute: mainImgRoute +'Administración de Empresas.png',
                 subList: [
@@ -120,7 +121,7 @@ const pages = [
             {
                 path: '/Contabilidad',
                 label: 'Contabilidad y Finanzas',
-                subLabel: '',
+                subLabel: 'Cooperamos para gestionar tu economía',
                 element: <Contabilidad/>,
                 imgRoute: mainImgRoute +'Contabilidad y Finanzas.png',
                 subList:[
@@ -139,7 +140,15 @@ const pages = [
     {
         path:'/Equipo',
         label: 'Equipo',
-        element: <TeamPage/>
+        element: <TeamPage/>,
+        children: [
+            {
+                path: '/bolsaProfesionales',
+                label: 'Unirse',
+                subLabel: 'Puedes ser uno de nosotros',
+                element: <HiringPage/>,
+            }
+        ]
     },
     {
       path: '/noticias',

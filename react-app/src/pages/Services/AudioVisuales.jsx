@@ -17,7 +17,7 @@ export default () => {
                     Fotografía Publicitaria: Estudio y Exteriores
                 </h4>
                 <Text fontSize='lg'>
-                    En [Nombre de la Empresa], nos especializamos en la creación de fotografías publicitarias tanto en
+                    En Creando, nos especializamos en la creación de fotografías publicitarias tanto en
                     estudio como en exteriores. Capturamos la esencia de tu marca con imágenes de alta calidad que
                     destacan tus productos o servicios de manera impactante y atractiva.
                 </Text>
