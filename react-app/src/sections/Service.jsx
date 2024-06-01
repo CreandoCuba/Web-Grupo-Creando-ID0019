@@ -24,7 +24,7 @@ const services = pages[2].children
                         {services.map((value,index) => {return(
                             <Slide up duration={500} delay={100*(index%4)} fraction={0.5}>
                                 <Container className="col-md-4" key={index}>
-                                    <div className="box ">
+                                    <Container className="box " >
                                         <div className="img-box">
                                             <img src={value.imgRoute} alt="Icono Representativo"/>
                                         </div>
@@ -37,7 +37,7 @@ const services = pages[2].children
 
                                             <ul>{value.subList?.map((value, index) => {return <li className='noDeco' key={index}>{value}</li>} )}</ul>
                                         </div>
-                                    </div>
+                                    </Container>
                                 </Container>
                             </Slide>
                         )})}
