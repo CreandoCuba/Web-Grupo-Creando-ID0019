@@ -1,13 +1,14 @@
+import {Center} from "@chakra-ui/react";
 
 
 const Footer = () => {
     return (
         <section className="footer_section">
-            <div className="container">
+            <Center>
                 <p>
                     &copy; <span id="displayYear"></span> Todos los derechos reservados: Creando
                 </p>
-            </div>
+            </Center>
         </section>
     )
 }

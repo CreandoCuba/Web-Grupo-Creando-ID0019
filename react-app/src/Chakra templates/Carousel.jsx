@@ -13,6 +13,7 @@ import { ArrowLeftIcon, ArrowRightIcon } from "@chakra-ui/icons";
 // And react-slick as our Carousel Lib
 import Slider from 'react-slick'
 import {Link} from "react-router-dom";
+import {useMediaQuery} from "react-responsive";
 
 // Settings for the slider
 const settings = {
@@ -31,40 +32,66 @@ export default function CaptionCarousel() {
     // As we have used custom buttons, we need a reference variable to
     // change the state
     const [slider, setSlider] = React.useState(null);
-
+    const isPortrait = useMediaQuery({orientation: "portrait"})
     // These are the breakpoints which changes the position of the
     // buttons as the screen size changes
-    const top = useBreakpointValue({ base: '90%', md: '50%' })
-    const side = useBreakpointValue({ base: '30%', md: '40px' })
+    const top = useBreakpointValue({ base: '85%', md: '50%' })
+    const side = useBreakpointValue({ base: '25px', md: '40px' })
 
     // This list contains all the data for carousels
     // This can be static or loaded from a server
     const cards = [
         {
             title: 'Te ayudamos a crecer',
-            text: "Nuestra empresa brinda variados servicios para ayudarte a crecer entre los cuales se incluyen servicios informáticos, de contabilidad o de diseño.",
+            text: "Nuestra empresa brinda variados servicios para ayudarte a crecer entre los cuales se incluyen servicios informáticos, contabilidad, gestion, o diseño.",
             image: 'images/carousel-1.png',
-            buttonLabel: 'Saber Más',
+            buttonLabel: 'Ver Más',
             buttonRef: '/PorQueNosotros',
         },
         {
             title: 'Conocenos',
-            text: "Somos un grupo que brinda servicios de consultoría empresarial integral a los actores económicos del territorio, para garantizar su rentabilidad y sostenibilidad en el tiempo.",
+            text: "Brindamos servicios de consultoría empresarial integral a los actores económicos del territorio, para garantizar su rentabilidad y sostenibilidad.",
             image: 'images/carousel-2.jpg',
-            buttonLabel:'Saber Más',
+            buttonLabel:'Ver Más',
             buttonRef:'/SobreNosotros',
         },
         {
             title: 'Mantente al tanto',
-            text: "Pronto estaremos publicando blogs e informaciones sobre la empresa, los servicios que ofrecemos y sobre nuestros clientes.",
+            text: "Pronto estaremos publicando blogs, noticias e informaciones sobre la empresa, los servicios que ofrecemos y sobre nuestros clientes. No te los pierdas!",
             image: 'images/carousel-3.jpg',
-            buttonLabel: 'Ver Informaciones',
+            buttonLabel: 'Ver Más',
             buttonRef: '/noticias',
         },
     ]
+    const left = (<IconButton
+        aria-label="left-arrow"
+        variant="solid"
+        colorScheme='orange'
+        backgroundColor='orange'
+        position={isPortrait? "relative" : "absolute"}
+        left={isPortrait?"0" : side}
+        top={isPortrait? "0" : top}
+        transform={isPortrait? "none":'translate(0%, -50%)'}
+        zIndex={2}
+        onClick={() => slider?.slickPrev()}>
+        <ArrowLeftIcon color='white'/>
+    </IconButton>)
+    const right = (<IconButton
+        aria-label="right-arrow"
+        variant="solid"
+        colorScheme='orange'
+        backgroundColor='orange'
+        position={isPortrait? "relative" : "absolute"}
+        right={isPortrait?"0" : side}
+        top={isPortrait? "0" : top}
+        transform={isPortrait? "none":'translate(0%, -50%)'}
+        zIndex={2}
+        onClick={() => slider?.slickNext()}>
+        <ArrowRightIcon color='white'/>
+    </IconButton>)
 
     return (
-        <Box position={'relative'} height={'600px'} width={'full'} overflow={'hidden'}>
+        <Box position={'relative'} height={'600px'} width={'100vw'} overflow={'hidden'}>
             {/* CSS files for react-slick */}
             <link
                 rel="stylesheet"
@@ -76,30 +103,12 @@ export default function CaptionCarousel() {
                 type="text/css"
                 href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
             />
+
             {/* Left Icon */}
-            <IconButton
-                aria-label="left-arrow"
-                variant="ghost"
-                position="absolute"
-                left={side}
-                top={top}
-                transform={'translate(0%, -50%)'}
-                zIndex={2}
-                onClick={() => slider?.slickPrev()}>
-                <ArrowLeftIcon/>
-            </IconButton>
+            {isPortrait? (<div></div>):left}
+
             {/* Right Icon */}
-            <IconButton
-                aria-label="right-arrow"
-                variant="ghost"
-                position="absolute"
-                right={side}
-                top={top}
-                transform={'translate(0%, -50%)'}
-                zIndex={2}
-                onClick={() => slider?.slickNext()}>
-                <ArrowRightIcon/>
-            </IconButton>
+            {isPortrait? (<div></div>):right}
             {/* Slider */}
             <Slider {...settings} ref={(slider) => setSlider(slider)}>
                 {cards.map((card, index) => (
@@ -134,14 +143,26 @@ export default function CaptionCarousel() {
                                 <Heading fontSize={{base: '3xl', md: '4xl', lg: '5xl' }} color={'white'}>
                                     {card.title}
                                 </Heading>
-                                <Text fontSize={{ base: 'md', lg: 'lg' }} color="white" w='100%'>
+                                <Text fontSize={{ base: 'md', lg: 'lg' }} color="white" w='100%' padding={'25px'}>
                                     {card.text}
                                 </Text>
+                                {isPortrait?(
+                                    <Center>
+                                        {left}
+                                        <Link to={card.buttonRef}>
+                                            <Button bg='orange' colorScheme='orange' color='white' m='15px'>
+                                                {card.buttonLabel}
+                                            </Button>
+                                        </Link>
+                                        {right}
+                                    </Center>
+                                ):(
                                 <Link to={card.buttonRef}>
                                     <Button bg='orange' colorScheme='orange' color='white' m='10px'>
                                         {card.buttonLabel}
                                     </Button>
                                 </Link>
+                                )}
                             </Center>
                         </Container>
                         </div>

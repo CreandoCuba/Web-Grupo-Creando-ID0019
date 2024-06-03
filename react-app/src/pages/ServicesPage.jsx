@@ -8,10 +8,7 @@ export default () => {
         <div class="sub_page">
 
 
-
-
         <Service/>
-s
         <Info/>
         <Footer/>
         </div>

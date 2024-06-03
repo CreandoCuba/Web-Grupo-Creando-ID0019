@@ -8,7 +8,7 @@ export default () => {
             <Stack paddingX='15%' py='70px'>
                 <Center>
                     <Heading>
-                        Servicios de Creacion de Audiovisuales
+                        Servicios de Creación de Audiovisuales
                     </Heading>
                 <img src={"images/services/Fotografía.png"} alt="" style={{margin:'20px', maxWidth:'100px'}}/>
                 </Center>

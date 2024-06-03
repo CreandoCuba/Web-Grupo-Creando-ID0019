@@ -105,11 +105,13 @@ const team = [
 
 export default function () {
     const path = useLocation();
+
     const [isMain, setIsMain] = useState(true);
     useEffect(()=> {
         setIsMain(path.pathname === '/' || path.pathname==='/inicio');
     }, [path.pathname])
     const portrait = useMediaQuery({orientation: "portrait"})
+
 
     if (isMain) {
         const NextArrow = ({ onClick }) => {
@@ -119,6 +121,7 @@ export default function () {
                     size='40px'
                     bgColor='none'
                     margin='auto'
+                    mr={'15px'}
                     onClick={onClick} />
             );
         };
@@ -130,6 +133,7 @@ export default function () {
                     size='40px'
                     bgColor='none'
                     margin='auto'
+                    ml={'15px'}
                     onClick={onClick}
                 />
             );
@@ -137,10 +141,13 @@ export default function () {
         const SliderSettings = {
             dots: true,
             infinite: true,
-            speed: 500,
+            speed: 400,
             slidesToShow: (portrait? 1:3),
             slidesToScroll: 1,
-
+            autoplay: true,
+            autoplaySpeed:2000,
+            pauseOnHover:false,
+            pauseOnFocus:false,
             nextArrow: <NextArrow />,
             prevArrow: <PrevArrow />,
         };
@@ -151,7 +158,12 @@ export default function () {
                         Nuestro <span> Equipo </span>
                     </h2>
                 </div>
-                <Slider className='slider' dotsClass="custom-dots" style={{display:'flex', flexDir:'row'}} {...SliderSettings}>
+                <Slider
+                    className='slider'
+                    dotsClass="custom-dots"
+                    style={{display:'flex', flexDir:'row'}}
+                    {...SliderSettings}
+                >
 
                     {team.map((member, index) => {
                         return (

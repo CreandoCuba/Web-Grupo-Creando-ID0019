@@ -8,6 +8,7 @@
     transform: translate(-50%, -50%);
     color: transparent;
     font-size: 0;
+    width: 200px;
 }
 
 .custom-dots li {

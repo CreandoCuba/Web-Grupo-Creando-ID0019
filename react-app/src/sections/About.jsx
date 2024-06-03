@@ -19,12 +19,15 @@ export default () => {
                             Sobre <span>Nosotros</span>
                         </h2>
                         <Text fontSize={'20px'} mx={'30px'}>
-                            Somos un grupo de <b>Consultoria Empresarial Integral</b> para el sector estatal y privado
+                            Somos un grupo de <b>Consultoría Empresarial Integral</b> para el sector estatal y privado
                         </Text>
                     </div>
                     {portrait?
                         <Stack marginX={'30px'}>
-                            <Image src="images/about-img.png" alt="" margin={'40px'} maxW={'40vw'}/>
+                            <Center>
+                                <Image src="images/about-img.png" alt="" margin='auto' maxW={'90vw'}/>
+                            </Center>
+
                             <h2>
                                 Somos Creando
                             </h2>
@@ -42,12 +45,14 @@ export default () => {
                         </Stack>
                         :
                         <Center marginX={'30px'}>
-                            <Image src="images/about-img.png" alt="" margin={'40px'} maxW={'40vw'}/>
-                            <Stack>
+                            <Flex direction={'row'}>
+
+                            <Image src="images/about-img.png" alt="" margin={'40px'} w={'40vw'} maxW={'400px'}/>
+                            <Stack margin={'40px'}>
                                 <h2>
                                     Somos Creando
                                 </h2>
-                                <Text fontSize='20px'>
+                                <Text fontSize='20px' maxW={'500px'}>
                                     Brindamos servicios de consultoría
                                     empresarial integral a los actores económicos del
                                     territorio, para garantizar su rentabilidad y
@@ -59,6 +64,7 @@ export default () => {
                                     </Button>
                                 </Link>
                             </Stack>
+                            </Flex>
                         </Center>
                             }
 
@@ -73,7 +79,7 @@ export default () => {
                                     Sobre <span>Nosotros</span>
                                 </h2>
                                 <p>
-                                    Somos un grupo de <b>Consultoria Empresarial Integral</b> para el sector estatal y
+                                    Somos un grupo de <b>Consultoría Empresarial Integral</b> para el sector estatal y
                                     privado
                                 </p>
                             </div>
@@ -98,7 +104,7 @@ export default () => {
                                 y humanismo.
                             </p>
                             <p>
-                                Tenemos a <b>vision</b> de ser un Proyecto líder en la
+                                Tenemos a <b>visión</b> de ser un Proyecto líder en la
                                 consultoría empresarial integral, con presencia a nivel
                                 nacional, en constante desarrollo de estrategias de negocios
                                 y planes de mejoras, que apoyen a nuestros clientes y al

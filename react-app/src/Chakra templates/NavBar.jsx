@@ -211,7 +211,7 @@ const DesktopSubNav = ({ label, path, subLabel }) => {
                     justify={'flex-end'}
                     align={'center'}
                     flex={1}>
-                    <Icon color={'orange.400'} w={5} h={5} as={ChevronRightIcon} />
+                    {/*<Icon color={'orange.400'} w={5} h={5} as={ChevronRightIcon} />*/}
                 </Flex>
             </Stack>
         </Link>

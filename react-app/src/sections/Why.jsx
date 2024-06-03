@@ -1,5 +1,6 @@
 import {Center, Container, Flex, Heading, Image, Text} from "@chakra-ui/react";
 import {Slide} from "react-reveal";
+import {useMediaQuery} from "react-responsive";
 
     const reasonsWhy = [
         {
@@ -12,7 +13,7 @@ import {Slide} from "react-reveal";
             image:"./images/icons/diana.png",
         },
         {
-            title: 'Somos Versatiles',
+            title: 'Somos Versátiles',
             resume: 'Nos encanta enfrentarnos a desafíos y encontrar soluciones'+
                 ' únicas para cada proyecto.',
             text: 'En primer lugar, somos un equipo de apasionados por la innovación y'+
@@ -57,7 +58,7 @@ import {Slide} from "react-reveal";
             image:'./images/icons/dinero.png',
         },
         {
-            title: 'Hacemos desde paginas web hasta Aplicaciones',
+            title: 'Hacemos desde páginas web hasta Aplicaciones',
             resume: 'Creamos soluciones personalizadas que se adaptan a tus necesidades específicas ',
             text: 'Por último, pero no menos importante, nuestro equipo de desarrollo de ' +
                 'software está listo para llevar tus ideas al siguiente nivel. ¿Tienes ' +
@@ -70,23 +71,28 @@ import {Slide} from "react-reveal";
     ];
 
 const IndexReasonHeader = ({title, image, isLeft, delay, resume}) => {
+    const isPortrait = useMediaQuery({orientation: "portrait"});
+    const iconMargin = isPortrait? '15px':'40px';
+    const iconWidth = isPortrait? '80px':'100px';
+    const textfontSize = isPortrait? 'ml':'lg';
+    const headerFontSize = isPortrait? '24px': '30px'
     if(isLeft){
         return(
             <Slide
                 left
                 duration={500}
-                fraction={1}
+                fraction={0.5}
                 delay={delay}
                 key={title}
             >
-                <Center m={'50px'}>
-                    <Container px={0} mx={0}>
-                        <Heading fontSize='30px'>{title}</Heading>
-                        <Text fontSize='lg'>
+                <Center mx={'50px'} my={'30px'}>
+                    <Container px={0} mx={0} minWidth={'150px'}>
+                        <Heading fontSize={headerFontSize}>{title}</Heading>
+                        <Text fontSize={textfontSize}>
                             {resume}
                         </Text>
                     </Container>
-                    <Image src={image} alt='icon' w={'100px'} mx={'40px'}/>
+                    <Image src={image} alt='icon' w={iconWidth} mx={iconMargin}/>
                 </Center>
             </Slide>
         )
@@ -94,15 +100,15 @@ const IndexReasonHeader = ({title, image, isLeft, delay, resume}) => {
         <Slide
             right
             duration={500}
-            fraction={1}
+            fraction={0.5}
             delay={delay}
             key={title}
         >
-            <Center m={'50px'}>
-                <Image src={image} alt='icon' w={'100px'} mx={'40px'}/>
-                <Container px={0} mx={0}>
-                    <Heading fontSize='30px'>{title}</Heading>
-                    <Text fontSize='lg'>
+            <Center mx={'50px'} my={'30px'} >
+                <Image src={image} alt='icon' w={iconWidth} mx={iconMargin}/>
+                <Container px={0} mx={0} minWidth={'150px'}>
+                    <Heading fontSize={headerFontSize}>{title}</Heading>
+                    <Text fontSize={textfontSize}>
                         {resume}
                     </Text>
                 </Container>
