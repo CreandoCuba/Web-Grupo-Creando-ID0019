@@ -139,7 +139,7 @@ export default function CaptionCarousel() {
                                 position="absolute"
                                 top="50%"
                                 transform="translate(0, -50%)">
-                                <img src="images/slider-img.png" alt="Creando" width='300px' className='HeroLogo'/>
+                                <img src="images/newLogo.png" alt="Creando" width='400px'  className='HeroLogo'  />
                                 <Heading fontSize={{base: '3xl', md: '4xl', lg: '5xl' }} color={'white'}>
                                     {card.title}
                                 </Heading>

@@ -84,7 +84,7 @@ export default function WithSubnavigation({NavItems}) {
                     />
                 </Flex>
                 <div className="img-box">
-                    <img src="images/Creando.png" alt="Creando" id='navBarLogotype'/>
+                    <img src="images/newLogo.png" alt="Creando" id='navBarLogotype'/>
                 </div>
                 <Flex flex={{base: 1}} justify={{base: 'center', md: 'start'}}>
 
